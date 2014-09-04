@@ -1,0 +1,15 @@
+
+/* ==========================================================================
+    CONTENT
+   ========================================================================== */
+
+/* Gives the content sections some breathing space */
+.content {
+	@extend .wrapper;
+	@include space;
+}
+
+.content-narrow {
+	@extend .wrapper-narrow;
+	@include space;
+}

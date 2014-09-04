@@ -1,0 +1,21 @@
+
+/* ==========================================================================
+   Site logo
+   ========================================================================== */
+
+.logo {
+    display: block;
+
+    img {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+    }
+
+	@include mq(xs) {
+		display: inline-block;
+        margin-right: -.25em;
+		width: 25%;
+		vertical-align: middle;
+	}
+}

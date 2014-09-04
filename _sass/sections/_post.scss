@@ -1,0 +1,25 @@
+
+/* ==========================================================================
+    POST
+   ========================================================================== */
+
+.post {
+
+}
+
+.post-header {
+    @extend .wrapper;
+    padding-top: spacer(4);
+}
+
+.post-footer {
+    border-top: 1px solid $border-color;
+}
+
+.post-meta {
+    font-style: italic;
+}
+
+.post-title {
+    margin-bottom: 0;
+}

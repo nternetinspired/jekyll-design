@@ -1,0 +1,21 @@
+
+/* ==========================================================================
+    PRIMARY NAVIGATION
+   ========================================================================== */
+
+.nav-row {
+    margin-bottom: spacer(2);
+    padding: 0;
+}
+
+/* MAIN NAVIGATION */
+.nav-primary {
+
+    @include mq(xs) {
+        display: inline-block;
+        margin-right: -.25em;
+        text-align: right;
+        vertical-align: middle;
+        width: 75%;
+    }
+}

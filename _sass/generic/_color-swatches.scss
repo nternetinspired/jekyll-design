@@ -1,0 +1,514 @@
+
+/* ==========================================================================
+    COLOR SWATCHES
+   ========================================================================== */
+
+$base-color: $brand-color;
+
+/* A Sass map for each of our pallette types */
+$analogous-colors: (
+    option-1: adjust_hue($base-color, -30),
+    option-2: adjust_hue($base-color, 30),
+);
+
+$split-complement-colors: (
+    option-1: adjust_hue($base-color, -150),
+    option-2: adjust_hue($base-color, 150),
+);
+
+$triadic-colors: (
+    option-1: adjust_hue($base-color, -120),
+    option-2: adjust_hue($base-color, 120),
+);
+
+$tetradic-colors: (
+    option-1: adjust_hue($base-color, +180),
+    option-2: adjust_hue($base-color, +240),
+    option-3: adjust_hue($base-color, -60),
+    option-4: adjust_hue($base-color, +60),
+    option-5: adjust_hue($base-color, -240),
+);
+
+$quadratic-colors: (
+    option-1: adjust_hue($base-color, +90),
+    option-2: adjust_hue($base-color, +180),
+    option-3: adjust_hue($base-color, -90),
+);
+
+$custom-colors: (
+    option-1: adjust_hue($base-color, -30),
+    option-2: adjust_hue($base-color, +180),
+    option-3: adjust_hue($base-color, 150),
+);
+
+.swatches { // Scope this sucker for safety. It's only a dev tool, so we can excuse selector bloat!
+    /* Generic swatch styles */
+    .color-item {
+        position: relative;
+        text-align: center;
+    }
+
+    .color-swatch {
+        display: block;
+        height: 0;
+        margin: 0 auto;
+        padding-bottom: 100%;
+        width: 100%;
+    }
+
+    .color-label {
+
+        padding: 1em;
+        text-align: left;
+
+        @media only screen and (min-width: 45em) {
+            background: rgba(0,0,0,.5);
+            color: #fff;
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .swatch {
+        margin-bottom: 2em;
+    }
+
+    /* Special treatment for our 'Brand' colour */
+    .color-brand {
+
+        .color-swatch {
+            background-color: $base-color;
+        }
+
+        .color-value {
+            &:after {
+                content: '#{$base-color}';
+            }
+        }
+    }
+
+    /* Shared swatch styles */
+    .swatch-analogous,
+    .swatch-split-complement,
+    .swatch-triadic {
+
+        .color-brand .color-swatch {
+            padding-bottom: 50%;
+        }
+
+        [class*="color-option"] {
+            float: left;
+            width: 50%;
+        }
+    }
+
+    /* Shared swatch styles */
+    .swatch-custom,
+    .swatch-tetradic,
+    .swatch-quadratic {
+
+        .color-brand .color-swatch {
+            padding-bottom: 50%;
+        }
+
+        [class*="color-option"] {
+            float: left;
+            width: 33.3333333%;
+        }
+    }
+
+    /* Styles for each swatch type */
+    .swatch-analogous {
+
+        @each $color-name, $color-value in $analogous-colors {
+
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-complement {
+
+        .color-item {
+            float: left;
+            width: 50%;
+        }
+
+        .color-option-1 {
+
+            .color-swatch {
+                background-color: adjust_hue($base-color, 180);
+            }
+
+            .color-value {
+
+                &:after {
+                    content: '#{adjust_hue($base-color, 180)}';
+                }
+            }
+        }
+    }
+
+    .swatch-custom {
+
+        @each $color-name, $color-value in $custom-colors {
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-split-complement {
+
+        @each $color-name, $color-value in $split-complement-colors {
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-tetradic {
+
+        @each $color-name, $color-value in $tetradic-colors {
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-triadic {
+
+        @each $color-name, $color-value in $triadic-colors {
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+
+    .swatch-quadratic {
+
+        @each $color-name, $color-value in $quadratic-colors {
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* The markup to demo the swatches. Dump this html into a joomla article */
+
+/*
+
+<h1>Color swatches generated with Sass</h1>
+<p>This demo includes only the styles needed to generate the colours, so you should be able to drop the markup and Sass/CSS into your project without conflict. Please note though, this isn't intended to be used in production environments <em>this is a development tool</em> to help you quickly find colours for your project.</em></p>
+<h2>Custom swatch</h2>
+<div class="swatch swatch-custom">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-30&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+180&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-3">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+150&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Complement colour</h2>
+<p>The exact opposite of your base colour, useful for delivering contrast but needs to be used with care. <em>Never</em> set copy in your complement colour against a background of your base colour, or vice-versa.</em></p>
+<div class="swatch swatch-complement">
+    <div class="clearfix">
+        <div class="color-item color-brand">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+            </div>
+        </div>
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+180&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Analogous colours</h2>
+<p>Two colours, one either side of your base colour on a <a href="http://en.wikipedia.org/wiki/Color_wheel">colour wheel</a>. Analogous colours are often found in nature and pleasing to the eye, making them a great choice for most projects.</p>
+<div class="swatch swatch-analogous">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-30&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+30&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Split-complementary colours</h2>
+<p>Similar to the analogous colour scheme but using two colours, one either side of the complement colour. Like an analogous colour scheme it's hard to go wrong with this one.</p>
+<div class="swatch swatch-split-complement">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-150&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+150&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Triadic colours</h2>
+<p>In this scheme colours are distributed evenly around the colour wheel, typically creating a very vibrant pallette. Use the two spin colours with care, in small doses.
+<div class="swatch swatch-triadic">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-120&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+120&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Tetradic colours 1</h2>
+<p>A tetradic, or rectangular colour scheme inludes four colours arranged into two complementary pairs, with one pair offset by two stops of the colour wheel giving two possible directions of 'spin'.</p>
+<h3>Spin 1</h3>
+<div class="swatch swatch-tetradic">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+180&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+240&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-3">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-60&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h3>Spin 2</h3>
+<div class="swatch swatch-tetradic">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+180&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-4">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+60&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-5">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-240&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>Quadratic colours</h2>
+<p>A square colour scheme inludes four colours arranged into two complementary pairs spaced evenly around the colour wheel.</p>
+<div class="swatch swatch-quadratic">
+    <div class="color-item color-brand">
+        <div class="color-swatch"></div>
+        <div class="color-label">
+            <div class="color-value"></div>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="color-item color-option-1">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+90&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-2">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base+180&deg;</div>
+            </div>
+        </div>
+        <div class="color-item color-option-3">
+            <div class="color-swatch"></div>
+            <div class="color-label">
+                <div class="color-value"></div>
+                <div class="color-treatment">Base-90&deg;</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+*/

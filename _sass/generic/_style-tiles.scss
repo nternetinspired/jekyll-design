@@ -1,0 +1,71 @@
+
+/* ==========================================================================
+    COLOR SWATCHES
+   ========================================================================== */
+
+$base-color: $brand-color;
+
+/* A Sass map for each of our pallette types */
+$swatch-1: (
+    color-1: adjust_hue($base-color, -30),
+    color-2: adjust_hue($base-color, +180),
+    color-3: adjust_hue($base-color, 150),
+);
+
+.style-tile { // Scope this sucker for safety. It's only a dev tool, so we can excuse selector bloat!
+
+    /* Generic swatch styles */
+    .color-item {
+    //    position: relative;
+    //    text-align: center;
+    }
+
+    .color-swatch {
+    //    display: block;
+    //    height: 0;
+    //    margin: 0 auto;
+    //    padding-bottom: 100%;
+    //    width: 100%;
+    }
+
+    .color-label {
+
+    }
+
+    /* Shared swatch styles */
+    .swatch-custom,
+    .swatch-tetradic,
+    .swatch-quadratic {
+
+        .color-brand .color-swatch {
+            padding-bottom: 50%;
+        }
+
+        [class*="color-option"] {
+            float: left;
+            width: 33.3333333%;
+        }
+    }
+
+    /* Styles for each swatch type */
+    .swatch-1 {
+
+        @each $color-name, $color-value in $swatch-1 {
+
+
+            .color-#{$color-name} {
+
+                .color-swatch {
+                    background-color: $color-value;
+                }
+
+                .color-value {
+
+                    &:after {
+                        content: '#{$color-value}';
+                    }
+                }
+            }
+        }
+    }
+}

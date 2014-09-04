@@ -1,0 +1,127 @@
+
+// A modular scale generates harmonious font sizes and baseline height: http://modularscale.com/
+$scale:                 1.3333 !default;
+
+// ==========================================================================
+//  ROOT RULES
+// ==========================================================================
+
+// Root element colours.
+$root-color:            rgb(62,62,62) !default;
+$root-background:       rgb(252,252,252) !default;
+
+// Also set body to allow faux footers.
+$body-background:       rgb(252, 252, 255) !default;
+
+// Default font-size.
+$root-size:             16px !default; // Set in px, it will be converted to ems.
+
+// Set leading.
+$root-baseline:         1.5; // Unitless value, doesn't have to be the same as $scale.
+
+// Default font-weight.
+$root-weight:           400 !default;
+
+// Constrain content widths to maintain an optimal measure.
+$wrapper-width:         60em !default;
+$wrapper-narrow-width:  35em !default;
+
+
+// ==========================================================================
+//  DEFAULT FONT STACKS
+// ==========================================================================
+
+// Our font stacks
+$sans-family:           'noto sans', sans-serif !default;
+$serif-family:          serif !default;
+$code-font-family:      monospace !default;
+
+// Project element stacks
+$root-family:           $sans-family !default;
+$button-family:         $sans-family !default;
+$heading-family:        $sans-family !default;
+
+// Enable OpenType font features? Inspired by: https://github.com/kennethormandy/normalize-opentype.css
+$opentype:              true !default;
+
+// ==========================================================================
+//  BRANDING
+// ==========================================================================
+
+// Brand palette
+$brand-color:           #b74745 !default; // We'll spin a pallette from this
+
+// Triadic color scheme? Go!
+$primary-color:         $brand-color !default;
+$complement-color:      adjust_hue($brand-color, +180) !default;
+$secondary-color: 	    adjust_hue($brand-color, -30) !default;
+$tertiary-color: 	    adjust_hue($brand-color, +150) !default;
+
+// UI elements colours, used in badges, buttons, labels, etc.
+$brand-alert: 	        rgb(252,248,227) !default;
+$brand-danger:          rgb(217,83,79) !default;
+$brand-info:            rgb(91,192,222) !default;
+$brand-primary:   	    rgb(50,118,177) !default;
+$brand-success:         rgb(92,184,92) !default;
+$brand-warning:	        rgb(240,173,78) !default;
+
+// Default colour for objects and borders.
+$brand-background:      rgb(242,242,245) !default;
+$input-background:      rgb(255,255,255) !default; // form inputs
+$pre-background:        rgb(248,248,255) !default;
+
+// Borders
+$border-color:          rgb(228,228,232) !default;
+$border-style:          solid !default;
+
+// The default size of rounded corners.
+$brand-radius:          .25em !default;
+$button-radius:         .25em !default;
+
+
+// ==========================================================================
+//  LINKS
+// ==========================================================================
+
+// Link colours.
+$link-color:            $brand-color !default;
+$link-color-hover:      darken($brand-color, 10%) !default;
+$link-color-visited:    darken($brand-color, 10%) !default;
+
+
+// ==========================================================================
+//  HEADINGS
+// ==========================================================================
+
+// Heading weight
+$heading-weight:        300 !default;
+
+// Heading color
+$heading-color:         darken($root-color, 5%) !default;
+
+
+// ==========================================================================
+//  TYPOGRAPHY
+// ==========================================================================
+
+$show-baseline:         false !default; // A visual guide to help correct baseline.
+
+// Paragraph settings
+$paragraph-indent:      false !default; // Get classy?
+$paragraph-justify:     false !default;
+
+// Default quote marks.
+$open-quote:            \201C !default; // If you're French you'll want to change these.
+$close-quote:           \201D !default;
+
+
+// ==========================================================================
+//  BREAKPOINTS
+// ==========================================================================
+
+// Specifying breakpoints in ems accounts changes in content size.
+$xs:                    20em !default;
+$sm:                    45em !default;
+$md:                    62em !default;
+$lg:                    90em !default;
+$xl:                    118em !default;

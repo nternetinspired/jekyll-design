@@ -1,0 +1,24 @@
+
+<div class="header-row">
+
+    <header role="banner" class="content">
+
+        <a class="logo" href="/" title="Seth Warburton" rel="home">
+            <img class="author" src="/img/mugshot.jpg" alt="Seth Warburton, looking good with cans." />
+        </a>
+
+        <nav role="navigation" class="nav-primary">
+            <ul class="nav">
+            {% for page in site.pages %}
+                <li>
+                {% if page.title %}
+                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                {% endif %}
+                </li>
+            {% endfor %}
+            </ul>      
+        </nav>
+
+    </header>
+
+</div>

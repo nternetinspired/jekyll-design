@@ -14,7 +14,11 @@ $base-color: $brand-color;
     }
 
     [class*="texture-swatch"] {
-        padding: 5em;
+        padding: 8em;
+    }
+
+    .adjective-samples {
+        line-height: 1;
     }
 
     .font-details {
@@ -26,9 +30,9 @@ $base-color: $brand-color;
     .swatch {
         background: #fff;
         border: 1px solid $border-color;
-        margin-right: 1.5em;
+        margin: .75em 1.5em .75em 0;
         padding: .5em;
-        @include box-shadow(0 0 2px rgba(0,0,0,.05));
+        @include box-shadow(0 1px 3px rgba(0,0,0,.05));
     }
 
     .typography-sample-h1 {
@@ -47,6 +51,29 @@ $base-color: $brand-color;
 /* Individual tiles/pages */
 
 .style-tile-1 { // Our scope, in this case page class
+
+    .adjective-samples {
+        font-family: serif;
+    }
+
+    .btn-sample-1 {
+        font-family: serif;
+    }
+
+    .typography-sample-h1 {
+        font-family: serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .typography-sample-h2 {
+        font-family: serif;
+        font-style: italic;
+    }
+
+    .typography-sample-p {
+        font-family: serif;
+    }
 
     // A Sass map for each colours
     $color-swatch: (
@@ -73,7 +100,7 @@ $base-color: $brand-color;
         swatch-3: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_grunge.png")
     );
 
-    // Yo Dawg! I heard you like texture classes
+    // Gimme dem textures
     @each $swatch-name, $swatch-value in $texture-swatch {
 
         .texture-#{$swatch-name} {
@@ -82,19 +109,33 @@ $base-color: $brand-color;
         }
     }
 
-    // Hell, let's spit out generic UI colours
-    // Yo Dawg! I heard you like texture classes
+    // Hell, let's spit out some generic UI colours too
     @each $swatch-name, $swatch-value in $color-swatch {
 
         .ui-#{$swatch-name} {
-            background: #{$swatch-value};
-
+            color: #{$swatch-value};
         }
     }
 
     .adjective-1 {
-        font-family: $serif-family;
+        font-weight: 700;
+        @include font-size($scale-up5);
+    }
+
+    .adjective-2 {
         font-style: italic;
         @include font-size($scale-up3);
+    }
+
+    .adjective-3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        @include font-size($scale-up4);
+    }
+
+    .adjective-4 {
+        font-style: italic;
+        font-weight: 300;
+        @include font-size($scale-up6);
     }
 }

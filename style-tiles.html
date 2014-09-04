@@ -4,17 +4,19 @@ title: Style Tiles
 ---
 
 
-<p class="intro">For more information on Style tiles I recommend reading this excellent ALA article;
+<p class="intro">For more information on Style tiles I recommend reading this
+    excellent ALA article, by their creator, Samantha Warren:
     <a href="http://alistapart.com/article/style-tiles-and-how-they-work">Style Tiles
-    and How They Work</a> by their creator.</p>
+    and How They Work</a>.
+</p>
 
 {% for post in site.posts %}
 <article>
 
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h1 class="gamma">{{ post.title }}</h1>
+        <h1 class="post-title gamma">{{ post.title }}</h1>
     </a>
-    <p class="tile-meta">{{ post.date | date: "%b %-d, %Y" }} • {% if page.author %}{{ page.author }}{% else %}{{ site.author.name}}{% endif %}</p>
+    <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • {% if page.author %}{{ page.author }}{% else %}{{ site.author.name}}{% endif %}</p>
 
     <p>{{ post.description }}</p>
 

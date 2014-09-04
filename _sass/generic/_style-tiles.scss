@@ -3,8 +3,6 @@
     SASSY STYLE TILES
    ========================================================================== */
 
-$base-color: $brand-color;
-
 .style-tile { // Scope this sucker for safety. It's a dev tool, so we can excuse selector bloat!
 
     @extend .well;
@@ -75,13 +73,13 @@ $base-color: $brand-color;
         font-family: serif;
     }
 
-    // A Sass map for each colours
+    // A Sass map for each colour
     $color-swatch: (
-        swatch-1: adjust_hue($base-color, 0),
-        swatch-2: adjust_hue($base-color, +180),
-        swatch-3: adjust_hue($base-color, +150),
-        swatch-4: adjust_hue($base-color, +30),
-        swatch-5: adjust_hue($base-color, -150)
+        swatch-1: adjust_hue($brand-color, 0),
+        swatch-2: adjust_hue($brand-color, +180),
+        swatch-3: adjust_hue($brand-color, +150),
+        swatch-4: adjust_hue($brand-color, +30),
+        swatch-5: adjust_hue($brand-color, -150)
     );
 
     // Yo Dawg! I heard you like colour classes

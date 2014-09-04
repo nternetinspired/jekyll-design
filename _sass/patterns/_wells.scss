@@ -4,9 +4,17 @@
    ========================================================================== */
 
 .well {
-	background: $brand-background;
+	background: #fff;
 	border: 1px solid $border-color;
     border-radius: $brand-radius;
     margin-bottom: spacer(4);
     padding: spacer(4);
+
+	@include mq(md) {
+		padding: spacer(8);
+	}
+
+	ul {
+		list-style-position: inside;
+	}
 }

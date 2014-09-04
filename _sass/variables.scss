@@ -23,7 +23,7 @@ $root-baseline:         1.5; // Unitless value, doesn't have to be the same as $
 $root-weight:           400 !default;
 
 // Constrain content widths to maintain an optimal measure.
-$wrapper-width:         60em !default;
+$wrapper-width:         70em !default;
 $wrapper-narrow-width:  35em !default;
 
 
@@ -49,7 +49,8 @@ $opentype:              true !default;
 // ==========================================================================
 
 // Brand palette
-$brand-color:           #b74745 !default; // We'll spin a pallette from this
+//$brand-color:           #b74745 !default; // We'll spin a pallette from this
+$brand-color:           #5694f1 !default; // We'll spin a pallette from this
 
 // Triadic color scheme? Go!
 $primary-color:         $brand-color !default;

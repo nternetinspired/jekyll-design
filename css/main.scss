@@ -65,21 +65,21 @@
 // into discrete and easily maintainable modules.
 //
 
-@import "patterns/alerts";
+//@import "patterns/alerts";
 //@import "patterns/breadcrumbs";
 @import "patterns/buttons";
 @import "patterns/content";
 //@import "patterns/forms";
 //@import "patterns/gists";
 @import "patterns/grid";
-@import "patterns/hero";
+//@import "patterns/hero";
 @import "patterns/lists";
 //@import "patterns/media";
 @import "patterns/nav";
-@import "patterns/overlays";
+//@import "patterns/overlays";
 //@import "patterns/pagination";
 //@import "patterns/responsive-tables";
-//@import "patterns/wells";
+@import "patterns/wells";
 @import "patterns/wrapper";
 
 
@@ -92,6 +92,6 @@
 @import "sections/footer";
 @import "sections/header";
 @import "sections/logo";
-//@import "sections/main";
+@import "sections/main";
 @import "sections/navigation";
-@import "sections/post";
+//@import "sections/post";

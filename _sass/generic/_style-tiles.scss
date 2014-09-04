@@ -1,71 +1,90 @@
 
 /* ==========================================================================
-    COLOR SWATCHES
+    SASSY STYLE TILES
    ========================================================================== */
 
 $base-color: $brand-color;
 
-/* A Sass map for each of our pallette types */
-$swatch-1: (
-    color-1: adjust_hue($base-color, -30),
-    color-2: adjust_hue($base-color, +180),
-    color-3: adjust_hue($base-color, 150),
-);
+.style-tile { // Scope this sucker for safety. It's a dev tool, so we can excuse selector bloat!
 
-.style-tile { // Scope this sucker for safety. It's only a dev tool, so we can excuse selector bloat!
+    @extend .well;
 
-    /* Generic swatch styles */
-    .color-item {
-    //    position: relative;
-    //    text-align: center;
+    [class*="color-swatch"] {
+        padding: 4em;
     }
 
-    .color-swatch {
-    //    display: block;
-    //    height: 0;
-    //    margin: 0 auto;
-    //    padding-bottom: 100%;
-    //    width: 100%;
+    [class*="texture-swatch"] {
+        padding: 5em;
     }
 
-    .color-label {
-
+    .font-details {
+        @extend .list-inline;
+        @extend .muted;
+        @include font-size($scale-down1);
     }
 
-    /* Shared swatch styles */
-    .swatch-custom,
-    .swatch-tetradic,
-    .swatch-quadratic {
+    .swatch {
+        background: #fff;
+        border: 1px solid $border-color;
+        margin-right: 1em;
+        padding: .5em;
+        @include box-shadow(0 0 2px rgba(0,0,0,.05));
+    }
 
-        .color-brand .color-swatch {
-            padding-bottom: 50%;
+    .swatchgrid {
+        @extend .list-inline;
+    }
+
+    .typography-sample-h1 {
+        margin-bottom: 0;
+    }
+
+    .typography-sample-h2 {
+        margin-bottom: spacer(1, $scale-up3);
+    }
+
+    .typography-sample-p {
+        margin-bottom: spacer(1);
+    }
+}
+
+/* Individual tiles/pages */
+
+.style-tile-1 { // Our scope, in this case page class
+
+    // A Sass map for each colours
+    $color-swatch: (
+        swatch-1: adjust_hue($base-color, 0),
+        swatch-2: adjust_hue($base-color, +180),
+        swatch-3: adjust_hue($base-color, +150),
+        swatch-4: adjust_hue($base-color, +30),
+        swatch-5: adjust_hue($base-color, -150),
+    );
+
+    // Yo Dawg! I heard you like colour classes
+    @each $swatch-name, $swatch-value in $color-swatch {
+
+        .color-#{$swatch-name} {
+            background-color: $swatch-value;
+
         }
-
-        [class*="color-option"] {
-            float: left;
-            width: 33.3333333%;
-        }
     }
 
-    /* Styles for each swatch type */
-    .swatch-1 {
+    // A Sass map for each texture
+    $texture-swatch: (
+        swatch-1: adjust_hue($base-color, 0),
+        swatch-2: adjust_hue($base-color, +180),
+        swatch-3: adjust_hue($base-color, +150),
+        swatch-4: adjust_hue($base-color, +30),
+        swatch-5: adjust_hue($base-color, -150),
+    );
 
-        @each $color-name, $color-value in $swatch-1 {
+    // Yo Dawg! I heard you like texture classes
+    @each $swatch-name, $swatch-value in $texture-swatch {
 
+        .color-#{$swatch-name} {
+            background-color: $swatch-value;
 
-            .color-#{$color-name} {
-
-                .color-swatch {
-                    background-color: $color-value;
-                }
-
-                .color-value {
-
-                    &:after {
-                        content: '#{$color-value}';
-                    }
-                }
-            }
         }
     }
 }

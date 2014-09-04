@@ -1,14 +1,28 @@
 # Site settings
 title: Jekyll Oneweb
-email: your-email@domain.com
+author:
+  name: Seth Warburton
+  email: seth@internet-inspired.com
+  twitter_username: nternetinspired
+  github_username:  nternetinspired
+
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+
 baseurl: "/jekyll-design" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: nternetinspired
-github_username:  nternetinspired
+twitter_username: yourusername
+github_username:  yourusername
+
+# Compress html
+compress_html:
+  clippings: ['!--', html, head, title, base, link, meta, style, body, article, section, nav, aside, h1, h2, h3, h4, h5, h6, hgroup, header, footer, address, p, hr, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption, main, div, table, caption, colgroup, col, tbody, thead, tfoot, tr, td, th]
+  endings: [html, head, body, li, dt, dd, p, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
 
 # Build settings
 markdown: kramdown
+permalink: /:categories/:title
+sass:
+    style: :compressed

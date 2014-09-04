@@ -4,13 +4,13 @@
    ========================================================================== */
 
 .footer-row {
-
-    border-top: 1px solid $border-color;
-
+//    border-top: 1px solid $border-color;
 }
 
 [role="contentinfo"] {
 
+    @extend .muted;
+    
     .colophon,
     .copyright,
     .social {

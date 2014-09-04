@@ -4,7 +4,7 @@
     <header role="banner" class="content">
 
         <a class="logo" href="/" title="Seth Warburton" rel="home">
-            <img class="author" src="/img/mugshot.jpg" alt="Seth Warburton, looking good with cans." />
+            <img class="author" src="{{ "/img/mugshot.jpg" | prepend: site.baseurl }}" alt="Seth Warburton, looking good with cans." />
         </a>
 
         <nav role="navigation" class="nav-primary">
@@ -16,7 +16,7 @@
                 {% endif %}
                 </li>
             {% endfor %}
-            </ul>      
+            </ul>
         </nav>
 
     </header>

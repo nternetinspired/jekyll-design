@@ -5,18 +5,23 @@
 
 .style-tile { // Scope this sucker for safety. It's a dev tool, so we can excuse selector bloat!
 
+    @extend .clearfix;
     @extend .well;
 
     [class*="color-swatch"] {
-        padding: 4em;
+        padding: 3.125em;
     }
 
     [class*="texture-swatch"] {
-        padding: 8em;
+        padding: 9em;
     }
 
     .adjective-samples {
         line-height: 1;
+    }
+
+    .client-logo {
+        margin: 0 0 spacer(8) 0;
     }
 
     .font-details {
@@ -25,11 +30,19 @@
         @include font-size($scale-down1);
     }
 
+    .sample-heading {
+        @extend .muted;
+        font-size: $root-size-em;
+        font-weight: 600;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
     .swatch {
         background: #fff;
         border: 1px solid $border-color;
-        margin: .75em 1.5em .75em 0;
-        padding: .5em;
+        margin: .5em 1em .5em 0;
+        padding: .275em;
         @include box-shadow(0 1px 3px rgba(0,0,0,.05));
     }
 
@@ -43,6 +56,16 @@
 
     .typography-sample-p {
         margin-bottom: spacer(1);
+    }
+
+    @include mq(md) {
+        .adjective-samples
+        .colour-samples,
+        .texture-samples,
+        .typography-samples {
+            float: left;
+            width: 50%;
+        }
     }
 }
 
@@ -59,14 +82,21 @@
     }
 
     .typography-sample-h1 {
+        @extend .ui-swatch-1;
         font-family: serif;
         font-weight: 700;
         text-transform: uppercase;
     }
 
     .typography-sample-h2 {
+        @extend .ui-swatch-4;
         font-family: serif;
         font-style: italic;
+    }
+
+    .typography-sample-a {
+
+            @extend .ui-swatch-1;
     }
 
     .typography-sample-p {
@@ -75,11 +105,11 @@
 
     // A Sass map for each colour
     $color-swatch: (
-        swatch-1: adjust_hue($brand-color, 0),
-        swatch-2: adjust_hue($brand-color, +180),
-        swatch-3: adjust_hue($brand-color, +150),
-        swatch-4: adjust_hue($brand-color, +30),
-        swatch-5: adjust_hue($brand-color, -150)
+        swatch-1: #FF5335,
+        swatch-2: #B39C85,
+        swatch-3: #306E73,
+        swatch-4: #3B424D,
+        swatch-5: #1D181F,
     );
 
     // Yo Dawg! I heard you like colour classes
@@ -95,7 +125,6 @@
     $texture-swatch: (
         swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/pw_maze_white.png"),
         swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/white_paperboard.png"),
-        swatch-3: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_grunge.png")
     );
 
     // Gimme dem textures
@@ -128,7 +157,7 @@
     .adjective-3 {
         font-weight: 700;
         text-transform: uppercase;
-        @include font-size($scale-up4);
+        @include font-size($scale-up1);
     }
 
     .adjective-4 {

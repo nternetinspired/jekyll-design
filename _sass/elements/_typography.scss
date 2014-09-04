@@ -6,6 +6,7 @@
 /* PARAGRAPHS */
 p {
     margin: 0 0 spacer(4);
+    max-width: 35em;
     orphans: 3;
     widows: 3;
     word-wrap: break-word;

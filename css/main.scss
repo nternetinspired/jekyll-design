@@ -37,11 +37,10 @@
 // <main> are too generic and included as sections, below.
 //
 @import "elements/root"; // This has to come first, obviously.
-
-@import "elements/articles";
+//@import "elements/articles";
 @import "elements/code";
 @import "elements/figures";
-@import "elements/forms";
+//@import "elements/forms";
 @import "elements/headings";
 @import "elements/images";
 @import "elements/links";
@@ -71,7 +70,7 @@
 @import "patterns/content";
 //@import "patterns/forms";
 //@import "patterns/gists";
-@import "patterns/grid";
+//@import "patterns/grid";
 //@import "patterns/hero";
 @import "patterns/lists";
 //@import "patterns/media";

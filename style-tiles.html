@@ -16,7 +16,10 @@ title: Style Tiles
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h1 class="post-title gamma">{{ post.title }}</h1>
     </a>
-    <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }} • {% if page.author %}{{ page.author }}{% else %}{{ site.author.name}}{% endif %}</p>
+    <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }} •
+        {% if post.author %}{{ post.author }}{% else %}{{ site.author.name}}{% endif %}
+    </p>
+    <p class="post-meta">{% for tag in post.tags %} • {{ post.tags }}{% endfor %}</p>
 
     <p>{{ post.description }}</p>
 

@@ -8,14 +8,6 @@
     @extend .clearfix;
     @extend .well;
 
-    [class*="color-swatch"] {
-        padding: 3.125em;
-    }
-
-    [class*="texture-swatch"] {
-        padding: 9em;
-    }
-
     .adjective-samples {
         line-height: 1;
     }
@@ -35,16 +27,16 @@
         @extend .muted;
         font-size: $root-size-em;
         font-weight: 600;
-        margin-bottom: 0;
+        margin-bottom: spacer(1, $root-size-em);
         text-transform: uppercase;
     }
 
     .swatch {
         background: #fff;
-        border: 1px solid $border-color;
-        margin: .5em 1em .5em 0;
-        padding: .275em;
-        @include box-shadow(0 1px 3px rgba(0,0,0,.05));
+        border: 5px solid #fff;
+        margin-bottom: spacer(4);
+        padding-bottom: 100%;
+        @include box-shadow(0 0 2px rgba(0,0,0,.35));
     }
 
     .typography-sample-h1 {
@@ -59,13 +51,4 @@
         margin-bottom: spacer(1);
     }
 
-    @include mq(md) {
-        .adjective-samples
-        .colour-samples,
-        .texture-samples,
-        .typography-samples {
-            float: left;
-            width: 50%;
-        }
-    }
 }

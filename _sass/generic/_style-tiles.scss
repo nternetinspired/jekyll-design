@@ -28,6 +28,10 @@
         line-height: 1;
     }
 
+    .btn-sample {
+        @extend .btn-default;
+    }
+
     .client-logo {
         margin: 0 0 spacer(8) 0;
     }

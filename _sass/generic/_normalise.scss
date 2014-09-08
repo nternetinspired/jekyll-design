@@ -117,7 +117,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: $strong-weight;
 }
 
 /**
@@ -162,10 +162,10 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    @include font-size($scale-down1);
 }
 
 sup {
@@ -422,8 +422,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/*
 td,
 th {
   padding: 0;
 }
+*/

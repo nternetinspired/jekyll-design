@@ -26,6 +26,8 @@ $root-weight:           400 !default;
 $wrapper-width:         90em !default;
 $wrapper-narrow-width:  35em !default;
 
+$show-baseline:         false !default; // A visual guide to help correct baseline.
+
 
 // ==========================================================================
 //  DEFAULT FONT STACKS
@@ -95,7 +97,7 @@ $link-color-visited:    darken($brand-color, 10%) !default;
 // ==========================================================================
 
 // Heading weight
-$heading-weight:        300 !default;
+$heading-weight:        $root-weight !default;
 
 // Heading color
 $heading-color:         darken($root-color, 5%) !default;
@@ -105,7 +107,7 @@ $heading-color:         darken($root-color, 5%) !default;
 //  TYPOGRAPHY
 // ==========================================================================
 
-$show-baseline:         false !default; // A visual guide to help correct baseline.
+$strong-weight:         600; // The font-weight used for <b> and <strong> elements.
 
 // Paragraph settings
 $paragraph-indent:      false !default; // Get classy?
@@ -121,8 +123,7 @@ $close-quote:           \201D !default;
 // ==========================================================================
 
 // Specifying breakpoints in ems accounts changes in content size.
-$xs:                    20em !default;
-$sm:                    45em !default;
-$md:                    62em !default;
-$lg:                    90em !default;
-$xl:                    118em !default;
+$sm:                    30em !default;
+$md:                    45em !default;
+$lg:                    64em !default;
+$xl:                    90em !default;

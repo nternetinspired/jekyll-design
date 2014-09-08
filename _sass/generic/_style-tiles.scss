@@ -8,7 +8,7 @@
     @extend .well;
 
     .adjective-1 {
-        @include font-size($scale-up5);
+        @include font-size($scale-up2);
     }
 
     .adjective-2 {
@@ -17,11 +17,11 @@
 
     .adjective-3 {
         text-transform: uppercase;
-        @include font-size($scale-up1);
+        @include font-size($scale-up4);
     }
 
     .adjective-4 {
-        @include font-size($scale-up6);
+        @include font-size($scale-up5);
     }
 
     .adjective-samples {
@@ -41,10 +41,10 @@
 
     .sample-heading {
         @extend .muted;
-        font-size: $root-size-em;
         font-weight: 600;
-        margin-bottom: spacer(1, $root-size-em);
         text-transform: uppercase;
+        margin-bottom: spacer(1, $scale-down1)!important;
+        @include font-size($scale-down1);
     }
 
     .swatch {

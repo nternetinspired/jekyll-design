@@ -3,59 +3,61 @@
     STYLE TILE 1
    ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic|Open+Sans:600italic,600,800);
 
-$sans-family: 'Noto Sans', sans-serif;
-$serif-family: 'Noto Serif', serif;
+$sans-family: 'Open Sans', sans-serif;
+$serif-family: 'Gentium Book Basic', serif;
 
 // A Sass map for each colour
 $color-swatch: (
-    swatch-1: #FF5335,
-    swatch-2: #B39C85,
-    swatch-3: #306E73,
-    swatch-4: #3B424D,
-    swatch-5: #1D181F,
+    swatch-1: #1C1D21,
+    swatch-2: #31353D,
+    swatch-3: #445878,
+    swatch-4: #92CDCF,
+    swatch-5: #EEEFF7,
 );
 
 // A Sass map for each texture
 $texture-swatch: (
-    swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/subtle_dots.png"),
-    swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/cream_dust.png"),
+    swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/geometry.png"),
+    swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grey.png"),
 );
 
-.style-tile-1 {
+.style-tile-2 {
 
-    .style-tile {
+    .style-tile { // Scope this sucker!
 
-        @extend .texture-swatch-1;
-        color: #3e3e3e;
-        font-family: $sans-family;
+        @extend .ui-swatch-1;
+        @extend .texture-swatch-2;
+        font-family: $serif-family;
 
         .adjective-1 {
-            @extend .ui-swatch-4;
-            font-family: $serif-family;
-            font-weight: 700;
-            @include font-size($scale-up3);
+            @extend .ui-swatch-3;
+            font-family: $sans-family;
+            font-weight: 800;
+            @include font-size($scale-up4);
         }
 
         .adjective-2 {
-            @extend .ui-swatch-1;
+            @extend .ui-swatch-2;
             font-style: italic;
             @include font-size($scale-up2);
         }
 
         .adjective-3 {
-            @extend .ui-swatch-5;
-            font-weight: 700;
+            @extend .ui-swatch-2;
+            font-weight: 800;
             text-transform: uppercase;
-            @include font-size($scale-up1);
+            @include font-size($scale-up2);
         }
 
         .adjective-4 {
-            @extend .ui-swatch-3;
-            font-family: $serif-family;
+            @extend .ui-swatch-4;
+            font-family: $sans-family;
             font-style: italic;
-            @include font-size($scale-up5);
+            font-weight: 800;
+            text-shadow: 2px 4px 2px darken(#92cdcf, 8%);
+            @include font-size($scale-up6);
         }
 
         .adjective-samples {
@@ -71,30 +73,33 @@ $texture-swatch: (
         }
 
         .btn-sample-2 {
-            @extend .btn-primary;
+            @extend .btn-info;
         }
 
         .typography-sample-h1 {
-            @extend .ui-swatch-1;
-            font-family: $serif-family;
-            font-weight: 700;
+            @extend .ui-swatch-3;
+            font-family: $sans-family;
+            font-weight: 800;
             text-transform: uppercase;
         }
 
         .typography-sample-h2 {
-            @extend .ui-swatch-4;
-            font-family: $serif-family;
-            font-style: italic;
+            @extend .ui-swatch-2;
+            font-family: $sans-family;
+            font-weight: 600;
         }
 
         .typography-sample-a {
-            @extend .ui-swatch-1;
+            @extend .ui-swatch-3;
         }
 
         .typography-sample-p {
 
         }
 
+        .well {
+            border: 5px solid #eeeff7;
+        }
     }
 
     // Yo Dawg! I heard you like colour classes

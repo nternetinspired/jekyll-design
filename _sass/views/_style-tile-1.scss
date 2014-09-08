@@ -3,46 +3,84 @@
     STYLE TILE 1
    ========================================================================== */
 
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic);
+
+$sans-family: 'Noto Sans', sans-serif;
+$serif-family: 'Noto Serif', serif;
+
+// A Sass map for each colour
+$color-swatch: (
+    swatch-1: #FF5335,
+    swatch-2: #B39C85,
+    swatch-3: #306E73,
+    swatch-4: #3B424D,
+    swatch-5: #1D181F,
+);
+
+// A Sass map for each texture
+$texture-swatch: (
+    swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/pw_maze_white.png"),
+    swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/white_paperboard.png"),
+);
+
 .style-tile-1 { // Scope this sucker!
 
+    font-family: $sans-family;
+
+    .adjective-1 {
+        font-weight: 700;
+    }
+
+    .adjective-2 {
+        font-style: italic;
+    }
+
+    .adjective-3 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .adjective-4 {
+        font-style: italic;
+    }
+
     .adjective-samples {
-        font-family: serif;
+
+    }
+
+    .btn-sample {
+        font-family: $sans-family;
     }
 
     .btn-sample-1 {
-        font-family: serif;
+        @extend .btn-default;
+    }
+
+    .btn-sample-2 {
+        @extend .btn-primary;
     }
 
     .typography-sample-h1 {
         @extend .ui-swatch-1;
-        font-family: serif;
+        font-family: $serif-family;
         font-weight: 700;
         text-transform: uppercase;
     }
 
     .typography-sample-h2 {
         @extend .ui-swatch-4;
-        font-family: serif;
+        font-family: $serif-family;
         font-style: italic;
     }
 
     .typography-sample-a {
-
-            @extend .ui-swatch-1;
+        @extend .ui-swatch-1;
     }
 
     .typography-sample-p {
-        font-family: serif;
+
     }
 
-    // A Sass map for each colour
-    $color-swatch: (
-        swatch-1: #FF5335,
-        swatch-2: #B39C85,
-        swatch-3: #306E73,
-        swatch-4: #3B424D,
-        swatch-5: #1D181F,
-    );
 
     // Yo Dawg! I heard you like colour classes
     @each $swatch-name, $swatch-value in $color-swatch {
@@ -52,12 +90,6 @@
 
         }
     }
-
-    // A Sass map for each texture
-    $texture-swatch: (
-        swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/pw_maze_white.png"),
-        swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/white_paperboard.png"),
-    );
 
     // Gimme dem textures
     @each $swatch-name, $swatch-value in $texture-swatch {
@@ -76,25 +108,4 @@
         }
     }
 
-    .adjective-1 {
-        font-weight: 700;
-        @include font-size($scale-up5);
-    }
-
-    .adjective-2 {
-        font-style: italic;
-        @include font-size($scale-up3);
-    }
-
-    .adjective-3 {
-        font-weight: 700;
-        text-transform: uppercase;
-        @include font-size($scale-up1);
-    }
-
-    .adjective-4 {
-        font-style: italic;
-        font-weight: 300;
-        @include font-size($scale-up6);
-    }
 }

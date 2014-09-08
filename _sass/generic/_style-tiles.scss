@@ -5,8 +5,24 @@
 
 .style-tile { // Scope this sucker. It's a dev tool, so we can the selector bloat!
 
-    @extend .clearfix;
     @extend .well;
+
+    .adjective-1 {
+        @include font-size($scale-up5);
+    }
+
+    .adjective-2 {
+        @include font-size($scale-up3);
+    }
+
+    .adjective-3 {
+        text-transform: uppercase;
+        @include font-size($scale-up1);
+    }
+
+    .adjective-4 {
+        @include font-size($scale-up6);
+    }
 
     .adjective-samples {
         line-height: 1;

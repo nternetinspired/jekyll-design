@@ -1,0 +1,9 @@
+---
+layout: blog
+---
+
+{% for post in site.posts %}
+	{% for tag in post.tags %}
+		{% if tag == page.tag %}{% include post-grid.html %}{% endif %}
+	{% endfor %}
+{% endfor %}

@@ -52,7 +52,7 @@ blockquote {
     padding: 0 0 0 spacer(4);
     font-style: italic;
     margin: 0 0 spacer(4) spacer(-4);
-    @include font-size($scale-up1);
+//    @include font-size($scale-up1);
 
 
     &:before,

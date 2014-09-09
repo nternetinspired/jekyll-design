@@ -1,0 +1,184 @@
+
+/* ==========================================================================
+    ELEMENT COLLAGE 1
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic);
+
+$sans-family: 'Noto Sans', sans-serif;
+$serif-family: 'Noto Serif', serif;
+
+// A Sass map for each colour
+$color-swatch: (
+    swatch-1: #1C1D21,
+    swatch-2: #31353D,
+    swatch-3: #445878,
+    swatch-4: #92CDCF,
+    swatch-5: #EEEFF7,
+);
+
+// A Sass map for each texture
+$texture-swatch: (
+    swatch-1: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/geometry.png"),
+    swatch-2: url("http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/grey.png"),
+);
+
+.element-collage-1 {
+
+        @extend .ui-swatch-1;
+
+        .adjective-1 {
+            @extend .ui-swatch-3;
+            font-family: $sans-family;
+            font-weight: 700;
+            @include font-size($scale-up4);
+        }
+
+        .adjective-2 {
+            @extend .ui-swatch-2;
+            font-style: italic;
+            @include font-size($scale-up5);
+        }
+
+        .adjective-3 {
+            @extend .ui-swatch-4;
+            font-weight: 700;
+            font-family: $serif-family;
+            text-transform: uppercase;
+            @include font-size($scale-up4);
+        }
+
+        .adjective-4 {
+            @extend .ui-swatch-4;
+            font-family: $serif-family;
+            font-style: italic;
+            font-weight: 700;
+            @include font-size($scale-up6);
+        }
+
+        .adjective-5 {
+            @extend .ui-swatch-2;
+            font-weight: 400;
+            text-transform: uppercase;
+            @include font-size($scale-up5);
+        }
+
+        .adjective-6 {
+            @extend .ui-swatch-3;
+            font-weight: 700;
+            font-family: $serif-family;
+            font-style: italic;
+            text-transform: uppercase;
+            @include font-size($scale-up4);
+        }
+
+        .adjective-samples {
+            margin-bottom: spacer(8);
+        }
+
+        blockquote {
+            border: 5px solid $border-color;
+            border-width: 5px 0;
+            font-family: $serif-family;
+            margin: 0 0 spacer(4, $scale-up2) 0;
+            padding: spacer(8, $scale-up2);
+
+            p {
+                @include font-size($scale-up2);
+            }
+
+        }
+
+        .btn-sample {
+            font-family: $sans-family;
+        }
+
+        .btn-sample-1 {
+            @extend .btn-default;
+        }
+
+        .btn-sample-2 {
+            @extend .btn-info;
+        }
+
+        .btn-sample-3 {
+            @extend .btn-success;
+        }
+
+        .cta-samples {
+            @extend .color-swatch-3;
+            border-top: 2px solid rgba(0,0,0,.4);
+            border-bottom: 2px solid rgba(0,0,0,.4);
+            color: #fff;
+            @include space;
+        }
+
+        .typography-sample-1 {
+            font-family: $serif-family;
+
+            .typography-sample-h1 {
+                font-family: $serif-family;
+                text-transform: uppercase;
+            }
+
+            .typography-sample-h2 {
+                font-family: $serif-family;
+            }
+        }
+
+        .typography-sample-h1 {
+            @extend .ui-swatch-3;
+            font-weight: 700;
+        }
+
+        .typography-sample-h2 {
+            @extend .ui-swatch-2;
+            font-weight: 700;
+        }
+
+        .typography-sample-a {
+            @extend .ui-swatch-3;
+        }
+
+        .typography-sample-cta {
+        //    font-weight: 700;
+            font-family: $serif-family;
+        //    text-transform: uppercase;
+
+        }
+
+        .typography-sample-p {
+
+        }
+
+        .well {
+            border: 5px solid #eeeff7;
+        }
+
+
+    // Yo Dawg! I heard you like colour classes
+    @each $swatch-name, $swatch-value in $color-swatch {
+
+        .color-#{$swatch-name} {
+            background-color: $swatch-value;
+
+        }
+    }
+
+    // Gimme dem textures
+    @each $swatch-name, $swatch-value in $texture-swatch {
+
+        .texture-#{$swatch-name} {
+            background: #{$swatch-value};
+
+        }
+    }
+
+    // Hell, let's spit out some generic UI colours too
+    @each $swatch-name, $swatch-value in $color-swatch {
+
+        .ui-#{$swatch-name} {
+            color: #{$swatch-value};
+        }
+    }
+}

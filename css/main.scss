@@ -26,7 +26,7 @@
 //@import "generic/fluid-type"; // Responsive type scaling, globally.
 //@import "generic/syntax"; // Code highlighting.
 @import "generic/color-swatches"; // DEVELOPMENT ONLY! Comment this out for production.
-@import "generic/style-tiles"; // DEVELOPMENT ONLY! Comment this out for production.
+
 
 
 /* ELEMENTS */
@@ -49,6 +49,7 @@
 //@import "elements/rules";
 //@import "elements/tables";
 @import "elements/typography";
+
 
 
 /* VENDOR */
@@ -81,6 +82,9 @@
 @import "patterns/wells";
 @import "patterns/wrapper";
 
+@import "patterns/element-collages"; // DEVELOPMENT ONLY! Comment this out for production.
+@import "patterns/style-tiles"; // DEVELOPMENT ONLY! Comment this out for production.
+
 
 /* SECTIONS */
 /* ========================================================================== */
@@ -99,5 +103,6 @@
 /* VIEWS */
 /* ========================================================================== */
 // CSS specific to individual pages.
+@import "views/element-collage-1";
 @import "views/style-tile-1";
 @import "views/style-tile-2";

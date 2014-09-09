@@ -1,7 +1,7 @@
 
 <div class="header-row">
 
-    <header role="banner" class="content">
+    <header role="banner" class="">
 
         <a class="logo one-quarter" href="{{ site.baseurl }}/" title="Seth Warburton" rel="home">
             <img class="author" src="{{ "/img/mugshot.jpg" | prepend: site.baseurl }}" alt="Seth Warburton, looking good with cans." />
@@ -9,13 +9,15 @@
 
         <nav role="navigation" class="nav-primary three-quarters">
             <ul class="nav">
-            {% for page in site.pages %}
                 <li>
-                {% if page.title %}
-                    <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                {% endif %}
+                    <a href="{{ site.baseurl }}/collages">Collages</a>
                 </li>
-            {% endfor %}
+                <li>
+                    <a href="{{ site.baseurl }}/tiles">Tiles</a>
+                </li>
+                <li>
+                    <a href="{{ site.baseurl }}/swatches">Swatches</a>
+                </li>
             </ul>
         </nav>
 

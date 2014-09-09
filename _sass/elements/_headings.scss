@@ -31,6 +31,8 @@ h4,
 h1,
 .alpha {
     @include header-size($scale-up4);
+    line-height: ceil($scale-up4 / $root-baseline) * ( .75 * ($root-baseline / $scale-up4));
+
 }
 
 h2,

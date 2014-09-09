@@ -9,7 +9,8 @@
 
 [role="contentinfo"] {
 
-//    @extend .muted;
+    @extend .muted;
+    padding: spacer(8) spacer(4);
 
     .colophon,
     .copyright,

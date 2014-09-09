@@ -5,12 +5,6 @@
 
 .wrapper {
     margin: 0 auto;
-    max-width: $wrapper-width;
     padding-left: spacer(4);
     padding-right: spacer(4);
-}
-
-.wrapper-narrow {
-    @extend .wrapper;
-    max-width: $wrapper-narrow-width;
 }

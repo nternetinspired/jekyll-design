@@ -8,10 +8,10 @@ $scale:                 1.3333 !default;
 
 // Root element colours.
 $root-color:            rgb(62,62,62) !default;
-$root-background:       rgb(252,252,252) !default;
+$root-background:       rgb(255,255,255) !default;
 
 // Also set body to allow faux footers.
-$body-background:       rgb(252, 252, 255) !default;
+$body-background:       rgb(255,255,255) !default;
 
 // Default font-size.
 $root-size:             16px !default; // Set in px, it will be converted to ems.
@@ -23,8 +23,8 @@ $root-baseline:         1.5; // Unitless value, doesn't have to be the same as $
 $root-weight:           400 !default;
 
 // Constrain content widths to maintain an optimal measure.
-$wrapper-width:         78em !default;
-$wrapper-narrow-width:  35em !default;
+$wrapper-width:         100em !default;
+$wrapper-width-narrow:  60em !default;
 
 $show-baseline:         false !default; // A visual guide to help correct baseline.
 
@@ -74,7 +74,7 @@ $input-background:      rgb(255,255,255) !default; // form inputs
 $pre-background:        rgb(248,248,255) !default;
 
 // Borders
-$border-color:          rgb(228,228,232) !default;
+$border-color:          rgb(242,242,242) !default;
 $border-style:          solid !default;
 
 // The default size of rounded corners.

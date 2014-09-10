@@ -7,19 +7,20 @@ tags: [Noto Sans, Bold, Style tile]
 
 <div class="grid">
     <div class="typography-samples col lg-three-fifths">
+
         <div class="client-logo">
-            <img src="http://placehold.it/350x150">
+            <img src="{{ site.client.logo | prepend: site.baseurl }}" title="client-logo">
         </div>
 
         <div class="well">
-            <h1 class="typography-sample-h1">A sample header</h1>
+            <h1 class="typography-sample-h1">{{ site.client.sample-h1 }}</h1>
             <ul class="font-details">
                 <li class="font-name">Noto Serif</li>,
                 <li class="font-color">#ff5335</li>,
                 <li class="font-source">Google Fonts</li>
             </ul>
 
-            <h2 class="typography-sample-h2">An example of a sub header</h2>
+            <h2 class="typography-sample-h2">{{ site.client.sample-h2 }}</h2>
             <ul class="font-details">
                 <li class="font-name">Noto Serif</li>,
                 <li class="font-color">#3b424d</li>,
@@ -27,15 +28,9 @@ tags: [Noto Sans, Bold, Style tile]
             </ul>
 
             <p class="typography-sample-p">
-                This sample paragraph has <strong>strong parts</strong> and <em>emphasized parts</em>.
-                Shabby chic messenger bag hella roof party, GBP£ 5,469.00, raw denim paleo before they
-                sold out hoodie gastropub Kickstarter PBR seitan mustache 90%.
-                PBR distillery butcher locavore selfies.
-                American Apparel hood ie tote bag selvage jean shorts,
-                readymade forage chillwave blog. Brunch Intelligentsia meggings 8-bit.
-                Ennui Banksy Godard, brunch bitters flexitarian <a class="typography-sample-a" href="#">Portland kitsch gentrify</a>
-                aesthetic Pitchfork banh mi DIY Williamsburg letterpress.
+                {{ site.client.sample-p-1 }}{{ site.client.sample-p-2 }}
             </p>
+
             <ul class="font-details">
                 <li class="font-name">Noto Sans</li>,
                 <li class="font-color">#3e3e3e</li>,
@@ -51,8 +46,8 @@ tags: [Noto Sans, Bold, Style tile]
 
             <div class="button-samples clearfix">
                 <p class="typography-sample-p">
-                    <a href="#" class="btn-sample btn-sample-1">Default button</a>
-                    <a href="#" class="btn-sample btn-sample-2">Primary button</a>
+                    <a href="#" class="btn-sample btn-sample-1">{{ site.client.sample-buttontext-1 }}</a>
+                    <a href="#" class="btn-sample btn-sample-2">{{ site.client.sample-buttontext-2 }}</a>
                 </p>
             </div>
         </div>
@@ -95,10 +90,10 @@ tags: [Noto Sans, Bold, Style tile]
 
         <div class="adjective-samples">
             <ul class="list-inline">
-                <li class="adjective-1">Sassmeister</li>
-                <li class="adjective-2">mumblecore</li>
-                <li class="adjective-3">Intelligentsia</li>
-                <li class="adjective-4">Chillwave</li>
+                <li class="adjective-1">{{ site.client.sample-adjective-1 }}</li>
+                <li class="adjective-2">{{ site.client.sample-adjective-2 }}</li>
+                <li class="adjective-3">{{ site.client.sample-adjective-3 }}</li>
+                <li class="adjective-4">{{ site.client.sample-adjective-4 }}</li>
             </ul>
         </div>
     </div>

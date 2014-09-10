@@ -5,7 +5,9 @@
 
 .style-tile { // Scope this sucker. It's a dev tool, so we can the selector bloat!
 
-    @extend .well;
+//    border: 1px solid $border-color;
+    padding: spacer(4);
+    @include box-shadow(0 0 2px rgba(0,0,0,.25));
 
     .adjective-1 {
         @include font-size($scale-up2);
@@ -52,7 +54,6 @@
     }
 
     .swatch {
-        background: #fff;
         border: 5px solid #fff;
         margin-bottom: spacer(4);
         padding-bottom: 100%;
@@ -70,5 +71,4 @@
     .typography-sample-p {
         margin-bottom: spacer(1);
     }
-
 }

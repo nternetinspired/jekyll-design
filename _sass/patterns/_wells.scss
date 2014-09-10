@@ -5,10 +5,11 @@
 
 .well {
 	background: #fff;
-	border: 1px solid $border-color;
+//	border: 1px solid $border-color;
     border-radius: $brand-radius;
     margin-bottom: spacer(4);
     padding: spacer(4);
+	@include box-shadow(0 0 2px rgba(0,0,0,.25));
 
 	&:last-child {
 	//	margin-bottom: 0;

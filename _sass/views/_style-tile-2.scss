@@ -25,10 +25,10 @@ $texture-swatch: (
 
 .style-tile-2 {
 
-    .style-tile { // Scope this sucker!
+    .style-tile {
 
-        @extend .ui-swatch-1;
         @extend .texture-swatch-2;
+        @extend .ui-swatch-1;
         font-family: $serif-family;
 
         .adjective-1 {

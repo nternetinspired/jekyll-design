@@ -7,17 +7,19 @@ $scale:                 1.3333 !default;
 // ==========================================================================
 
 // Root element colours.
-$root-color:            rgb(62,62,62) !default;
+$root-color:            rgb(42,42,42) !default;
 $root-background:       rgb(255,255,255) !default;
 
 // Also set body to allow faux footers.
 $body-background:       rgb(255,255,255) !default;
 
 // Default font-size.
-$root-size:             16px !default; // Set in px, it will be converted to ems.
+$root-size:             18px !default; // Set in px, it will be converted to ems.
 
 // Set leading.
-$root-baseline:         1.5; // Unitless value, doesn't have to be the same as $scale.
+$root-lineheight:       1.6 !default; // Unitless value, doesn't have to be the same as $scale.
+$show-baseline:         true !default; // A visual guide to help correct baseline.
+
 
 // Default font-weight.
 $root-weight:           400 !default;
@@ -26,7 +28,6 @@ $root-weight:           400 !default;
 $wrapper-width:         100em !default;
 $wrapper-width-narrow:  60em !default;
 
-$show-baseline:         false !default; // A visual guide to help correct baseline.
 
 
 // ==========================================================================
@@ -34,7 +35,7 @@ $show-baseline:         false !default; // A visual guide to help correct baseli
 // ==========================================================================
 
 // Our font stacks
-$sans-family:           'open sans', sans-serif !default;
+$sans-family:           'freight-sans-pro', sans-serif !default;
 $serif-family:          serif !default;
 $code-font-family:      monospace !default;
 
@@ -97,7 +98,7 @@ $link-color-visited:    darken($brand-color, 10%) !default;
 // ==========================================================================
 
 // Heading weight
-$heading-weight:        $root-weight !default;
+$heading-weight:        700 !default;
 
 // Heading color
 $heading-color:         darken($root-color, 5%) !default;
@@ -107,7 +108,7 @@ $heading-color:         darken($root-color, 5%) !default;
 //  TYPOGRAPHY
 // ==========================================================================
 
-$strong-weight:         600; // The font-weight used for <b> and <strong> elements.
+$strong-weight:         700 !default; // The font-weight used for <b> and <strong> elements.
 
 // Paragraph settings
 $paragraph-indent:      false !default; // Get classy?

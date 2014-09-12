@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Typography tester
+title: Good typography matters ™
 ---
 
-Why? I found myself writing a selection of wacky type, usually within a CMS editor
-in my case, in order to visualise the typographic styles I was setting in a live
-environment. That shit gets tiresome real quick, so I made this thing.
+I frequently found myself writing a load of wacky type, oftent within a CMS
+WYSIWYG editor, simply to visualise the typographic styles I was setting in a
+live environment. That shit gets real tiresome real quick, so I made this thing.
 {: class="intro" }
 
 In a professional context it often happens that private or corporate clients
@@ -13,42 +13,8 @@ corder a publication to be made and presented with the actual content still not
 being ready. Think of a news blog that’s filled with content hourly on the day
 of going live. However, reviewers tend to be distracted by comprehensible content,
 say, a random text copied from a newspaper or the internet. The are likely to
-focus on the text, disregarding the layout and its elements.Besides, random text
-risks to be unintendedly humorous or offensive, an unacceptable risk in corporate
-environments. Lorem ipsum and its many variants have been employed since the early
+focus on the text, disregarding the layout and its elements. Lorem ipsum and its many variants have been employed since the early
 ‘60s, and quite likely since the sixteenth century.
-
-## Headings
-
-All the headings, for your delectation. Scenester actually Tumblr cred, ethical
-sartorial cardigan mustache slow-carb cliche. Kitsch McSweeney's roof party
-American Apparel, you probably haven't heard of them polaroid cardigan.
-
-<hr/>
-
-# h1 size
-
-## h2 size
-
-### h3 size
-
-#### h4 size
-
-##### h5 size
-
-###### h6 size
-
-<hr/>
-
-Crucifix fixie Williamsburg pour-over, hoodie Pitchfork American Apparel ethical
-letterpress wolf meh flexitarian chillwave master cleanse. Disrupt actually ethnic
-pop-up, literally Etsy Schlitz locavore paleo yr gentrify.
-
-# h1, the most awesome of headings.
-Mustache vinyl tofu meh. Sriracha asymmetrical wayfarers, you probably haven't
-heard of them viral kogi fashion axe meggings craft beer drinking vinegar Bushwick
-letterpress tousled selvage. Keffiyeh Odd Future Thundercats master cleanse
-cornhole, meggings gentrify before they sold out.
 
 Church-key tousled forage cliche quinoa Truffaut. Direct trade roof party umami,
 meh whatever Tonx Cosby sweater pug. Kitsch cardigan Schlitz, flannel Cosby
@@ -57,36 +23,34 @@ pop-up. Ethical mumblecore you probably haven't heard of them, 8-bit bicycle
 rights cornhole fixie Blue Bottle. Cred organic tofu selfies, occupy pug pickled
 McSweeney's try-hard.
 
-## h2, not quite so awesome but still pretty important.
+## Not awesome but still pretty darn important.
 Plaid iPhone pug, Tonx sartorial farm-to-table food truck single-origin coffee
 gentrify Godard disrupt cliche. Try-hard biodiesel brunch McSweeney's Blue Bottle
 Shoreditch. Distillery readymade artisan, Kickstarter biodiesel kale chips
 Intelligentsia. Flannel squid fingerstache American Apparel brunch, Brooklyn
 literally fashion axe.
 
-### h3. About as low as I usually go down the rabbit hole.
+### There's very few legitimate reasons to go below h3.
 Below h3? Why bother?? Selvage brunch keffiyeh mumblecore normcore, cornhole
 direct trade Banksy dreamcatcher chillwave crucifix wayfarers Austin. Vinyl put
 a bird on it normcore narwhal Thundercats. Disrupt mlkshk viral fanny pack,
 photo booth cred pork belly polaroid stumptown keytar fashion axe Intelligentsia
 tousled Truffaut.
 
-#### h4. Really, this doesn’t seem very important does it?
+#### Really, this doesn’t seem very important does it?
 Put a bird on it actually McSweeney's, skateboard gentrify art party mumblecore
-fixie. Bicycle rights food truck cornhole, tofu fixie chia organic.
-
-Fixie Echo Park trust fund, ugh master cleanse Shoreditch flannel Bushwick umami
+fixie. Bicycle rights food truck cornhole, tofu fixie chia organic. Fixie Echo Park trust fund, ugh master cleanse Shoreditch flannel Bushwick umami
 hella post-ironic organic authentic roof party. Tousled organic tattooed bitters,
 Pitchfork Austin roof party disrupt.
 
-##### h5. I’ve given up at this point.
+##### I’ve given up at this point.
 iPhone Tumblr hoodie mixtape selvage vegan. Swag lomo Banksy Brooklyn viral
 disrupt, dreamcatcher whatever irony Intelligentsia XOXO.
 Cred viral irony narwhal shabby chic. Swag pop-up cornhole viral Portland.
 Vice pug Echo Park tattooed, Helvetica mustache blog freegan High Life
 single-origin coffee you probably haven't heard of them whatever.
 
-###### h6. Nothing to see here.
+###### Nothing to see here.
 Blue Bottle cray ethical, fingerstache mlkshk PBR PBR&B mixtape Marfa butcher
 messenger bag gastropub. Plaid biodiesel flannel, ugh lo-fi pour-over Austin
 Intelligentsia Bushwick letterpress seitan.
@@ -96,14 +60,12 @@ salvia Etsy gastropub +1 fingerstache tousled dreamcatcher.
 
 ## Rules
 
+<hr/>
+
 Check it out, horizontal rules. These need special treatment if they aren’t
-going to fubar your baseline
+going to fubar your baseline.
 
-------------------------------------------------------------------------
-
-Look ma, I’m between rules!
-
-------------------------------------------------------------------------
+<hr/>
 
 ## Phrase elements
 

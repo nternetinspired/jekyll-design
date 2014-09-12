@@ -31,13 +31,13 @@ $texture-swatch: (
             @extend .ui-swatch-3;
             font-family: $sans-family;
             font-weight: 700;
-            @include font-size($scale-up4);
+            @include set-type(4, $scale-up4);
         }
 
         .adjective-2 {
             @extend .ui-swatch-2;
             font-style: italic;
-            @include font-size($scale-up5);
+            @include set-type(4, $scale-up5);
         }
 
         .adjective-3 {
@@ -45,7 +45,7 @@ $texture-swatch: (
             font-weight: 700;
             font-family: $serif-family;
             text-transform: uppercase;
-            @include font-size($scale-up4);
+            @include set-type(4, $scale-up4);
         }
 
         .adjective-4 {
@@ -53,14 +53,14 @@ $texture-swatch: (
             font-family: $serif-family;
             font-style: italic;
             font-weight: 700;
-            @include font-size($scale-up6);
+            @include set-type(4, $scale-up6);
         }
 
         .adjective-5 {
             @extend .ui-swatch-2;
             font-weight: 400;
             text-transform: uppercase;
-            @include font-size($scale-up5);
+            @include set-type(4, $scale-up5);
         }
 
         .adjective-6 {
@@ -69,7 +69,7 @@ $texture-swatch: (
             font-family: $serif-family;
             font-style: italic;
             text-transform: uppercase;
-            @include font-size($scale-up4);
+            @include set-type(4, $scale-up4);
         }
 
         .adjective-samples {
@@ -84,7 +84,7 @@ $texture-swatch: (
             padding: spacer(8, $scale-up2);
 
             p {
-                @include font-size($scale-up2);
+                @include set-type(4, $scale-up2);
             }
 
         }

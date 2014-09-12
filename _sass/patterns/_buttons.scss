@@ -181,7 +181,7 @@
 
 .btn-huge {
     padding: spacer(3, $scale-up1) spacer(6, $scale-up1);
-    @include font-size($scale-up1);
+    @include set-type(4, $scale-up1);
 }
 
 .btn-natural {

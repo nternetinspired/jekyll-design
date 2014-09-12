@@ -35,27 +35,27 @@ $texture-swatch: (
             @extend .ui-swatch-4;
             font-family: $serif-family;
             font-weight: 700;
-            @include font-size($scale-up3);
+            @include set-type(4, $scale-up3);
         }
 
         .adjective-2 {
             @extend .ui-swatch-1;
             font-style: italic;
-            @include font-size($scale-up2);
+            @include set-type(4, $scale-up2);
         }
 
         .adjective-3 {
             @extend .ui-swatch-5;
             font-weight: 700;
             text-transform: uppercase;
-            @include font-size($scale-up1);
+            @include set-type(4, $scale-up1);
         }
 
         .adjective-4 {
             @extend .ui-swatch-3;
             font-family: $serif-family;
             font-style: italic;
-            @include font-size($scale-up5);
+            @include set-type(4, $scale-up5);
         }
 
         .adjective-samples {

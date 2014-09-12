@@ -6,28 +6,28 @@
 .element-collage { // Scope this sucker. It's a dev tool, so we can the selector bloat!
 
     .adjective-1 {
-        @include font-size($scale-up2);
+        @include set-type(4, $scale-up4);
     }
 
     .adjective-2 {
-        @include font-size($scale-up3);
+        @include set-type(4, $scale-up3);
     }
 
     .adjective-3 {
         text-transform: uppercase;
-        @include font-size($scale-up4);
+        @include set-type(4, $scale-up4);
     }
 
     .adjective-4 {
-        @include font-size($scale-up5);
+        @include set-type(4, $scale-up5);
     }
 
     .adjective-5 {
-        @include font-size($scale-up2);
+        @include set-type(4, $scale-up2);
     }
 
     .adjective-6 {
-        @include font-size($scale-up4);
+        @include set-type(4, $scale-up4);
     }
 
     .adjective-samples {
@@ -50,7 +50,7 @@
     .sample-details {
         @extend .muted;
         margin-bottom: spacer(4, $scale-down1)!important;
-        @include font-size($scale-down1);
+        @include set-type(4, $scale-down1);
     }
 
     .logo-sample {
@@ -66,7 +66,7 @@
         font-weight: 600;
         text-transform: uppercase;
         margin-bottom: spacer(1, $scale-down1)!important;
-        @include font-size($scale-down1);
+        @include set-type(4, $scale-down1);
     }
 
     .swatch {
@@ -94,7 +94,7 @@
     }
 
     .typography-sample-cta {
-        @include font-size($scale-up4);
+        @include set-type(4, $scale-up4);
         margin-bottom: spacer(4, $scale-up4);
     }
 

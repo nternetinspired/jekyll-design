@@ -12,7 +12,6 @@ html {
 
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    @include font-smoothing;
 }
 
 /*
@@ -31,18 +30,37 @@ html {
 
     html,
     body {
-      font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0; /* 1. */
+        -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+        -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+        font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
     }
 }
 
 /* Style the body element styles. */
 body {
     background: $body-background;
-    font: #{$root-weight} #{percentage($root-size / 16px)}/#{$root-baseline} $root-family;
+    font: #{$root-weight} #{$root-size-em}/#{$root-lineheight} $root-family;
 
     // If set in project vars show the typographic baseline visually
     @if $show-baseline == true {
-        background-image: url(http://basehold.it/i/#{strip-units(round($root-baseline * $root-size))});
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            background-image: -webkit-linear-gradient(rgba(0, 0, 233, .15) 1px, rgba(0, 0, 0, 0) 1px);
+            background-image: linear-gradient(rgba(0, 0, 233, .15) 1px, rgba(0, 0, 0, 0) 1px);
+            background-size: 100% ($root-lineheight + 0em);
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
     }
 }
 

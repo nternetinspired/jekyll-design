@@ -153,7 +153,7 @@ mark {
  */
 
 small {
-    @include font-size($scale-down1);
+    @include set-type(4, $scale-down1);
 }
 
 /**
@@ -165,7 +165,7 @@ sup {
     line-height: 0;
     position: relative;
     vertical-align: baseline;
-    @include font-size($scale-down1);
+    @include set-type(4, $scale-down1);
 }
 
 sup {
@@ -211,9 +211,7 @@ svg:not(:root) {
  */
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
-  height: 0;
 }
 
 /**

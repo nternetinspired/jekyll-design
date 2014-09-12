@@ -15,7 +15,7 @@
     .colophon,
     .copyright,
     .social {
+        @extend small;
         margin-bottom: spacer(4, $scale-down1);
-        @include font-size($scale-down1);
     }
 }

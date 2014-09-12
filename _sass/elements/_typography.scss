@@ -5,19 +5,12 @@
 
 /* PARAGRAPHS */
 p {
-    margin: 0 0 spacer(4);
+    margin: 0 0 spacer();
     orphans: 3;
     widows: 3;
     word-wrap: break-word;
 
     @include hyphens;
-
-    //Numbers in paragraphs should kick it Old Skool: http://bit.ly/1g0uevo
-    -moz-font-feature-settings: 'onum=1';
-    -ms-font-feature-settings: 'onum';
-    -webkit-font-feature-settings: 'onum';
-    -o-font-feature-settings: 'onum';
-    font-feature-settings: 'onum';
 
     @if $paragraph-indent {
         + p {
@@ -35,12 +28,10 @@ p {
 
 /* Typically used in the first paragraph of an article, for added awesome. */
 .intro {
-    @include font-size($scale-up1);
-    margin-bottom: spacer(4, $scale-up1);
-    line-height: $root-baseline;
-
+//    margin-bottom: spacer(2, $scale-up1);
+//    @include set-type(5, $scale-up1);
     @if $paragraph-indent {
-    //    margin-bottom: spacer(8, $scale-up1);
+//        margin-bottom: spacer(5, $scale-up1);
     }
 }
 
@@ -75,7 +66,7 @@ blockquote {
 cite {
     display: block;
     margin-top: spacer(2, $scale-down1);
-    @include font-size($scale-down1);
+    @include set-type(4, $scale-down1);
 
     &:before {
         content: "\2014";
@@ -103,11 +94,10 @@ abbr {
     text-transform: uppercase;
 
     @if $opentype == true {
-
-    // Turn on small caps for upper and lowercase letters
-    -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
-    -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
-    font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+        // Turn on small caps for upper and lowercase letters
+        -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+        -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+        font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
     }
 }
 

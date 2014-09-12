@@ -48,8 +48,8 @@ body {
         &:before {
             content: "";
             display: block;
-            background-image: -webkit-linear-gradient(rgba(0, 0, 233, .15) 1px, rgba(0, 0, 0, 0) 1px);
-            background-image: linear-gradient(rgba(0, 0, 233, .15) 1px, rgba(0, 0, 0, 0) 1px);
+            background-image: -webkit-linear-gradient(rgba(0, 0, 233, .1) 1px, rgba(0, 0, 0, 0) 1px);
+            background-image: linear-gradient(rgba(0, 0, 233, .1) 1px, rgba(0, 0, 0, 0) 1px);
             background-size: 100% ($root-lineheight + 0em);
             pointer-events: none;
             position: absolute;

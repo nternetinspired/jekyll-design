@@ -28,8 +28,8 @@ p {
 
 /* Typically used in the first paragraph of an article, for added awesome. */
 .intro {
-    margin-bottom: spacer(2, $scale-up1);
-    @include set-type(5, $scale-up1);
+    margin-bottom: spacer(3.25, $scale-up1);
+    @include set-type(4.5, $scale-up1);
     @if $paragraph-indent {
         margin-bottom: spacer(5, $scale-up1);
     }

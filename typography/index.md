@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Good typography matters ™
+title: Typography matters ™
 ---
 
 I frequently found myself writing a load of wacky type, oftent within a CMS
@@ -13,15 +13,8 @@ corder a publication to be made and presented with the actual content still not
 being ready. Think of a news blog that’s filled with content hourly on the day
 of going live. However, reviewers tend to be distracted by comprehensible content,
 say, a random text copied from a newspaper or the internet. The are likely to
-focus on the text, disregarding the layout and its elements. Lorem ipsum and its many variants have been employed since the early
-‘60s, and quite likely since the sixteenth century.
-
-Church-key tousled forage cliche quinoa Truffaut. Direct trade roof party umami,
-meh whatever Tonx Cosby sweater pug. Kitsch cardigan Schlitz, flannel Cosby
-sweater four loko skateboard hella pug polaroid farm-to-table cray PBR forage
-pop-up. Ethical mumblecore you probably haven't heard of them, 8-bit bicycle
-rights cornhole fixie Blue Bottle. Cred organic tofu selfies, occupy pug pickled
-McSweeney's try-hard.
+focus on the text, disregarding the layout and its elements.
+Church-key tousled forage cliche quinoa Truffaut.
 
 ## Not awesome but still pretty darn important.
 Plaid iPhone pug, Tonx sartorial farm-to-table food truck single-origin coffee

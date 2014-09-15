@@ -3,162 +3,31 @@ layout: collage
 category: collages
 excerpt: Beautiful and free. Noto is Google’s font family was designed to achieve visual harmonization across the world's languages. With both sans and serif faces it is extremely versatile.
 tags: [Noto Sans, Clean, Business]
-font-1-name: Noto Sans
-font-1-color-1: #f00;
-font-1-weight-1: 400;
+font-1-name: Noto Serif
+font-1-hex-1: 3a3a3a
+font-1-source: Google Fonts
+font-2-name: Noto Sans
+font-2-hex-1: 777
+font-2-source: Typekit
+swatch-hex-1: 0b1f36
+swatch-hex-2: 27405f
+swatch-hex-3: 7f98b9
+swatch-hex-4: e4f1fa
+swatch-hex-5: c8403d
 ---
 
-<div class="logo-sample sample content-narrow">
-    <img src="{{ site.client.logo | prepend: site.baseurl }}" title="client-logo">
-</div>
+{% include sample-logo.html %}
 
-<div class="colour-samples sample content-narrow">
-    <h3 class="sample-heading">Colour pallette</h3>
-    <ul class="swatch-grid grid">
-        <li class="col sm-one-half md-one-fifth">
-            <div class="swatch color-swatch-1"></div>
-            <p class="sample-details">#33433</p>
-        </li>
-        <li class="col sm-one-half md-one-fifth">
-            <div class="swatch color-swatch-2"></div>
-            <p class="sample-details">#33433</p>
-        </li>
-        <li class="col sm-one-half md-one-fifth">
-            <div class="swatch color-swatch-3"></div>
-            <p class="sample-details">#33433</p>
-        </li>
-        <li class="col sm-one-half md-one-fifth">
-            <div class="swatch color-swatch-4"></div>
-            <p class="sample-details">#33433</p>
-        </li>
-        <li class="col sm-one-half md-one-fifth">
-            <div class="swatch color-swatch-5"></div>
-            <p class="sample-details">#33433</p>
-        </li>
-    </ul>
-</div>
+{% include sample-swatch.html %}
 
-<div class="typography-samples sample content">
-    <div class="grid">
+{% include sample-typography.html %}
 
-        <div class="col md-one-half xl-one-half">
-            <div class="typography-sample typography-sample-1">
+{% include sample-blockquote.html %}
 
-                <h1 class="typography-sample-h1">{{ site.client.sample-h1 }}</h1>
+{% include sample-buttons.html %}
 
-                <p class="typography-sample-p intro">
-                    {{ site.client.sample-p-1 }}
-                </p>
+{% include sample-images.html %}
 
-                <p class="typography-sample-p">
-                    {{ site.client.sample-p-2 }}</p>
-                </p>
+{% include sample-adjectives.html %}
 
-                <h2 class="typography-sample-h2">{{ site.client.sample-h2 }}</h2>
-
-                <p class="typography-sample-p">
-                    {{ site.client.sample-p-3 }}
-                </p>
-
-                <p class="typography-sample-p"><a class="typography-sample-a" href="#">{{ site.client.sample-link-1 }}</a></p>
-
-                <ul class="font-details">
-                    <li class="font-name">{{ page.font-1-name }}</li>,
-                    <li class="font-color">#color value</li>,
-                    <li class="font-source">Font source</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="col md-one-half xl-one-half">
-            <div class="typography-sample typography-sample-2">
-
-                <h1 class="typography-sample-h1">{{ site.client.sample-h1 }}</h1>
-
-                <p class="typography-sample-p intro">
-                    {{ site.client.sample-p-1 }}
-                </p>
-
-                <p class="typography-sample-p">
-                    {{ site.client.sample-p-2 }}</p>
-                </p>
-
-                <h2 class="typography-sample-h2">{{ site.client.sample-h2 }}</h2>
-
-                <p class="typography-sample-p">
-                    {{ site.client.sample-p-3 }}
-                </p>
-
-                <p class="typography-sample-p"><a class="typography-sample-a" href="#">{{ site.client.sample-link-1 }}</a></p>
-
-                <ul class="font-details">
-                    <li class="font-name">{{ page.font-1-name }}</li>,
-                    <li class="font-color">#color value</li>,
-                    <li class="font-source">Font source</li>
-                </ul>
-                
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<div class="quote-samples sample content-narrow">
-    <blockquote>
-        <p>
-            A quote, or testimonial is a great way to exemplify your business success
-            and make the most of available material.
-        </p>
-        <cite>Me - I just said that.</cite>
-    </blockquote>
-</div>
-
-<div class="button-samples sample content-narrow">
-    <h3 class="sample-heading">Button samples</h3>
-    <p class="typography-sample-p">
-        <a href="#" class="btn-sample btn-sample-1">{{ site.client.sample-buttontext-1 }}</a>
-        <a href="#" class="btn-sample btn-sample-2">{{ site.client.sample-buttontext-2 }}</a>
-    </p>
-</div>
-
-<div class="image-samples sample content">
-    <h3 class="sample-heading">Image samples</h3>
-    <ul class="image-grid grid">
-        <li class="col md-one-half lg-one-quarter">
-            <div class="swatch image-sample-1"></div>
-        </li>
-        <li class="col md-one-half lg-one-quarter">
-            <div class="swatch image-sample-2"></div>
-        </li>
-        <li class="col md-one-half lg-one-quarter">
-            <div class="swatch image-sample-3"></div>
-        </li>
-        <li class="col md-one-half lg-one-quarter">
-            <div class="swatch image-sample-4"></div>
-        </li>
-    </ul>
-</div>
-
-<div class="adjective-samples sample content-narrow">
-    <h3 class="sample-heading">Mood samples</h3>
-    <ul class="list-inline">
-        <li class="adjective-1">{{ site.client.sample-adjective-1 }}</li>
-        <li class="adjective-2">{{ site.client.sample-adjective-2 }}</li>
-        <li class="adjective-3">{{ site.client.sample-adjective-3 }}</li>
-        <li class="adjective-4">{{ site.client.sample-adjective-4 }}</li>
-        <li class="adjective-4">{{ site.client.sample-adjective-5 }}</li>
-        <li class="adjective-4">{{ site.client.sample-adjective-6 }}</li>
-    </ul>
-</div>
-
-<div class="cta-samples sample">
-    <div class="content">
-        <p class="typography-sample-cta">
-            {{ site.client.sample-cta }}
-        </p>
-        <p>
-            <a href="#" class="typography-sample-cta-button">{{ site.client.sample-cta-button }}</a>
-        </p>
-    </div>
-</div>
+{% include sample-calltoaction.html %}

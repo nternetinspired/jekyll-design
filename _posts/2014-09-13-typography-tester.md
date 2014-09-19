@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Typography matters ™
+title: Because good typography matters
+excerpt: This is simple a page of dummy copy with which the typographic basics can be set and tested against, a typographical test-bed.
 ---
 
 I frequently found myself writing a load of wacky type, oftent within a CMS

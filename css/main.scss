@@ -70,7 +70,7 @@
 @import "patterns/buttons";
 @import "patterns/content";
 //@import "patterns/forms";
-//@import "patterns/gists";
+@import "patterns/gists";
 @import "patterns/grid";
 //@import "patterns/hero";
 @import "patterns/lists";
@@ -82,7 +82,6 @@
 @import "patterns/wells";
 @import "patterns/wrapper";
 
-@import "patterns/element-collages"; // DEVELOPMENT ONLY! Comment this out for production.
 @import "patterns/style-tiles"; // DEVELOPMENT ONLY! Comment this out for production.
 
 
@@ -103,6 +102,5 @@
 /* VIEWS */
 /* ========================================================================== */
 // CSS specific to individual pages.
-@import "views/element-collage-1";
+@import "views/element-collage-1"; // DEVELOPMENT ONLY! Comment this out for production.
 @import "views/style-tile-1";
-@import "views/style-tile-2";

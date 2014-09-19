@@ -1,62 +1,70 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Lato:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic|Open+Sans:400italic,700italic,400,700);
 
-/* ==========================================================================
-    ELEMENT COLLAGE 1
-   ========================================================================== */
+$type-sample-1: 'Noto Sans', sans-serif;
+$type-sample-2: 'Noto Serif', serif;
+$type-sample-3: 'Lato', sans-serif;
+$type-sample-4: 'Open Sans', sans-serif;
 
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic|Noto+Serif:400,700,400italic,700italic);
-
-
-$sans-family: 'Noto Sans', sans-serif;
-$serif-family: 'Noto Serif', serif;
-
+//    swatch-1: #0b1f36,
 
 // A Sass map for each colour
 $color-swatch: (
-    swatch-1: #0b1f36,
+    swatch-1: #3c3c3b,
     swatch-2: #27405f,
     swatch-3: #7f98b9,
     swatch-4: #e4f1fa,
     swatch-5: #c8403d,
 );
 
-.element-collage-1 {
+.element-collage { // Scope this sucker. It's a dev tool, so we can the selector bloat!
 
-    color: #333;
+    // Override some defaults
+    %btn,
+    blockquote,
+    cite,
+    figcaption {
+        font-family: $type-sample-2;
+    }
 
     .adjective-1 {
         @extend .ui-swatch-2;
-        font-family: $sans-family;
+        font-family: $type-sample-2;
         font-weight: $strong-weight;
-        @include set-type(10, $scale-up4);
+        @include set-type(4, $scale-up4);
     }
 
     .adjective-2 {
         @extend .ui-swatch-3;
-        @include set-type(10, $scale-up3);
+        font-family: $type-sample-1;
+        @include set-type(4, $scale-up3);
     }
 
     .adjective-3 {
-        font-weight: $strong-weight;
-        font-family: $serif-family;
-        @include set-type(10, $scale-up5);
+        font-family: $type-sample-2;
+        font-style: italic;
+        @include set-type(8, $scale-up6);
     }
 
     .adjective-4 {
         @extend .ui-swatch-5;
-        font-family: $serif-family;
-        @include set-type(4, $scale-up5);
+        font-family: $type-sample-2;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include set-type(4, $scale-up4);
     }
 
     .adjective-5 {
-        font-family: $sans-family;
-        font-weight: $strong-weight;
-        @include set-type(4, $scale-up3);
+        @extend .ui-swatch-3;
+        font-family: $type-sample-1;
+        font-weight: 700;
+        @include set-type(6, $scale-up5);
     }
 
     .adjective-6 {
-        font-weight: $strong-weight;
-        font-family: $serif-family;
-        @include set-type(10, $scale-up4);
+        @extend .muted;
+        font-family: $type-sample-1;
+        font-style: italic;
+        @include set-type(8, $scale-up6);
     }
 
     .adjective-samples {
@@ -65,94 +73,264 @@ $color-swatch: (
 
     blockquote {
 
-        border: 5px solid $border-color;
-        border-width: 5px 0;
-        margin: 0 0 spacer(4, $scale-up2) 0;
-        padding: spacer(8, $scale-up2);
+        border-left: 4px solid #e4f1fa;
+        font-family: $type-sample-2;
 
         p {
-            @extend .muted;
-            font-family: $serif-family;
-            @include set-type(6, $scale-up2);
-        }
 
+        }
     }
 
     .btn-sample {
-        font-family: $sans-family;
+
     }
 
     .btn-sample-2 {
-        @extend .btn-info;
+
     }
 
-    .cta-samples {
-        @extend .color-swatch-5;
-        border-top: 2px solid rgba(0,0,0,.4);
-        border-bottom: 2px solid rgba(0,0,0,.4);
-        color: #fff;
-        @include space;
+    .header-image {
+
+
+        position: relative;
+
+
+        h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            color: #fff;
+            margin: 0;
+        }
+
+        .caption {
+            background: transparentize(#c8403d, .2);
+            padding: spacer(2) spacer(4) spacer(2) spacer(6);
+            position: absolute;
+        //    max-width: 36em;
+
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .readmore {
+            color: #c8403d;
+            font-weight: 800;
+            font-size: .83em;
+            text-transform: uppercase;
+        }
+    }
+
+    .image-sample {
+
+        background: #fff;
+        border: 5px solid #fff;
+        @include box-shadow(0 0 2px rgba(0,0,0,.35));
+
+        figure {
+            margin-bottom: 0;
+        }
+
+        figcaption {
+            font-style: italic;
+        }
+    }
+
+    .image-sample-1 {
+
+        figure {
+            margin: 0;
+            position: relative;
+        }
+
+        figcaption {
+            color: #e4f1fa;
+            position: absolute;
+            width: 100%;
+
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .image-sample-2 {
+
+        figure {
+
+        }
+
+        figcaption {
+
+        }
+    }
+
+    .image-sample-3 {
+
+        figure {
+
+        }
+
+        figcaption {
+
+        }
+    }
+
+    .image-sample-4 {
+
+        figure {
+
+        }
+
+        figcaption {
+
+        }
+    }
+
+    .logo-sample {
+        text-align: center;
+    }
+
+    .font-details {
+        @extend .list-inline;
+    }
+
+    .font-details,
+    .sample-details {
+        @extend .muted;
+        margin-bottom: spacer(4, $scale-down1)!important;
+        @include set-type(4, $scale-down1);
+    }
+
+    .sample {
+
+    }
+
+    .sample-heading {
+        @extend .muted;
+        font-weight: $strong-weight;
+        text-transform: uppercase;
+        margin-bottom: spacer(1, $scale-down1)!important;
+        @include set-type(4, $scale-down1);
+    }
+
+    .swatch {
+        background: #fff;
+        border: 5px solid #fff;
+        margin-bottom: spacer(1);
+        padding-bottom: 100%;
+        @include box-shadow(0 0 2px rgba(0,0,0,.35));
+    }
+
+    .typography-samples {
+
+        @include mq(md) {
+
+            .col {
+                padding-left: spacer(8);
+            }
+
+            .grid {
+                margin-left: spacer(-8);
+            }
+        }
     }
 
     .typography-sample-1 {
 
-        .typography-sample-h1 {
-            font-family: $serif-family;
-        }
-
-        .typography-sample-h2 {
-            font-family: $serif-family;
-        }
-
+        &,
+        .typography-sample-h1,
+        .typography-sample-h2,
         .typography-sample-p {
-            font-family: $sans-family;
+            font-family: $type-sample-1;
+
+            .typography-sample-h1 {
+
+            }
+
+            .typography-sample-h2 {
+
+            }
         }
     }
 
     .typography-sample-2 {
 
+        &,
+        .typography-sample-h1,
+        .typography-sample-h2,
+        .typography-sample-p {
+            font-family: $type-sample-2;
+        }
+
         .typography-sample-h1 {
-            font-family: $sans-family;
+
         }
 
         .typography-sample-h2 {
-            font-family: $sans-family;
-        }
 
-        .typography-sample-p {
-            font-family: $serif-family;
         }
     }
 
     .typography-sample-3 {
 
+        &,
+        .typography-sample-h1,
+        .typography-sample-h2,
+        .typography-sample-p {
+            font-family: $type-sample-3;
+        }
+
         .typography-sample-h1 {
-            font-family: $sans-family;
+
         }
 
         .typography-sample-h2 {
-            font-family: $sans-family;
+
+        }
+    }
+
+    .typography-sample-4 {
+
+        &,
+        .typography-sample-h1,
+        .typography-sample-h2,
+        .typography-sample-p {
+
         }
 
-        .typography-sample-p {
-            font-family: $serif-family;
+        .typography-sample-h1 {
+
+        }
+
+        .typography-sample-h2 {
+
         }
     }
 
     .typography-sample-h1 {
-        @extend .ui-swatch-2;
+        @extend .ui-swatch-5;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     .typography-sample-h2 {
-        @extend .ui-swatch-3;
+        @extend .ui-swatch-2;
+        font-weight: 700;
     }
 
     .typography-sample-a {
-        @extend .ui-swatch-3;
+        color: #c8403d;
     }
 
     .typography-sample-cta {
-        font-family: $serif-family;
 
     }
 
@@ -160,16 +338,11 @@ $color-swatch: (
 
     }
 
-    .well {
-        border: 5px solid #eeeff7;
-    }
-
     // Yo Dawg! I heard you like colour classes
     @each $swatch-name, $swatch-value in $color-swatch {
 
         .color-#{$swatch-name} {
             background-color: $swatch-value;
-
         }
     }
 

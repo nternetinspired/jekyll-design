@@ -28,10 +28,10 @@ p {
 
 /* Typically used in the first paragraph of an article, for added awesome. */
 .intro {
-    margin-bottom: spacer(3.25, $scale-up1);
+    margin-bottom: spacer(4, $scale-up1);
     @include set-type(4.5, $scale-up1);
     @if $paragraph-indent {
-        margin-bottom: spacer(5, $scale-up1);
+        margin-bottom: spacer(4, $scale-up1);
     }
 }
 
@@ -41,9 +41,9 @@ p {
 blockquote {
     border-left: 2px solid $border-color;
     padding: 0 0 0 spacer(4);
-//    font-style: italic;
+    font-style: italic;
     margin: 0 0 spacer(4) spacer(-4);
-//    @include font-size($scale-up1);
+    @include set-type(4, $scale-up1);
 
     &:before,
     &:after {

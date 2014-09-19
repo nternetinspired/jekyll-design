@@ -14,7 +14,7 @@ $root-background:       rgb(255,255,255) !default;
 $body-background:       rgb(255,255,255) !default;
 
 // Default font-size.
-$root-size:             16px !default; // Set in px, it will be converted to ems.
+$root-size:             18px !default; // Set in px, it will be converted to ems.
 
 // Set leading.
 $root-lineheight:       1.7 !default; // Unitless value, doesn't have to be the same as $scale.
@@ -25,8 +25,8 @@ $show-baseline:         false !default; // A visual guide to help correct baseli
 $root-weight:           400 !default;
 
 // Constrain content widths to maintain an optimal measure.
-$wrapper-width:         130em !default;
-$wrapper-width-narrow:  60em !default;
+$wrapper-width:         100em !default;
+$wrapper-width-narrow:  50em !default;
 
 
 
@@ -35,7 +35,7 @@ $wrapper-width-narrow:  60em !default;
 // ==========================================================================
 
 // Our font stacks
-$sans-family:           'freight-sans-pro', sans-serif !default;
+$sans-family:           'omnes-pro', sans-serif !default;
 $serif-family:          serif !default;
 $code-font-family:      monospace !default;
 
@@ -75,7 +75,7 @@ $input-background:      rgb(255,255,255) !default; // form inputs
 $pre-background:        rgb(248,248,255) !default;
 
 // Borders
-$border-color:          rgb(242,242,242) !default;
+$border-color:          rgb(232,232,232) !default;
 $border-style:          solid !default;
 
 // The default size of rounded corners.
@@ -98,7 +98,7 @@ $link-color-visited:    darken($brand-color, 10%) !default;
 // ==========================================================================
 
 // Heading weight
-$heading-weight:        700 !default;
+$heading-weight:        600 !default;
 
 // Heading color
 $heading-color:         darken($root-color, 5%) !default;
@@ -108,7 +108,7 @@ $heading-color:         darken($root-color, 5%) !default;
 //  TYPOGRAPHY
 // ==========================================================================
 
-$strong-weight:         700 !default; // The font-weight used for <b> and <strong> elements.
+$strong-weight:         600 !default; // The font-weight used for <b> and <strong> elements.
 
 // Paragraph settings
 $paragraph-indent:      false !default; // Get classy?

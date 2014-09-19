@@ -16,6 +16,11 @@
     border-top: 1px solid $border-color;
 }
 
+.post-intro {
+    border-top: 1px solid $border-color;
+    padding-top: spacer(4);
+}
+
 .post-meta {
     font-style: italic;
     margin-bottom: spacer(4, $scale-down1);
@@ -23,5 +28,9 @@
 }
 
 .post-title {
-    margin-bottom: 0;
+
+}
+
+.post-title-link {
+    text-decoration: none;
 }

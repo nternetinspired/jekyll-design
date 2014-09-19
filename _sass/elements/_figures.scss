@@ -9,7 +9,7 @@ figure {
 
 	figcaption {
 		@extend .muted;
-		font-style: italic;
+		@include set-type(4, $scale-down1);
 	}
 
 	img {

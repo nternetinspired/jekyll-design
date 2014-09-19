@@ -1,15 +1,7 @@
 
-// ==========================================================================
-//  MIXINS
-// ==========================================================================
-
-// Set boxsizing, defaults to border-box.
-@mixin box-sizing($boxsize: border-box) {
-    -webkit-box-sizing: $boxsize;
-    -moz-box-sizing: $boxsize;
-    -ms-box-sizing: $boxsize;
-    box-sizing: $boxsize;
-}
+/* ==========================================================================
+    MIXINS
+   ========================================================================== */
 
 // Better OSX font-rendering
 @mixin font-smoothing() {
@@ -208,7 +200,11 @@
     }
 }
 
-// Returns a number without a unit.
+/* ==========================================================================
+    VERTICAL RHYTHM - inspired by, and adapted from, https://github.com/ianrose/typesettings
+   ========================================================================== */
+
+// Return a number without a unit.
 @function strip-units($number) {
   @return $number / ($number * 0 + 1);
 }
@@ -221,10 +217,6 @@ $base-line-multi: 4 !default;
 
 // The vertical grid unit.
 $base-vertical-unit: strip-units(($root-lineheight * $root-size-em) / $base-line-multi);
-
-//==============================================================================
-// Helper function(s)
-//==============================================================================
 
 // Returns a context-dependant em value for vertically spacing elements
 @function spacer($lines: $base-line-multi, $font-size: $root-size-em) {

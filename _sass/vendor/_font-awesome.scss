@@ -6,8 +6,6 @@
 // Import the font
 @include font-face('FontAwesome', '../fonts/fontawesome-webfont');
 
-/* Loading all this is stupid. This is the full list, icons in use mapped below.
-
 // Map icon names to font unicode characters
 $icons: (
     adjust: "\f042",
@@ -515,31 +513,6 @@ $icons: (
     youtube-square: "\f166",
 );
 
-*/
-
-// Map icon names to font unicode characters
-$icons: (
-    arrow-circle-o-left: "\f190",
-    arrow-circle-o-right: "\f18e",
-    envelope: "\f0e0",
-    facebook: "\f09a",
-    heart: "\f004",
-    home: "\f015",
-    info-circle: "\f05a",
-    eur: "\f153",
-    euro: "\f153",
-    exchange: "\f0ec",
-    google-plus: "\f0d5",
-    linkedin: "\f0e1",
-    search: "\f002",
-    share-square-o: "\f045",
-    sign-in: "\f090",
-    times-circle-o: "\f05c",
-    twitter: "\f099",
-    users: "\f0c0",
-);
-
-
 // Get pseudo. Use a mixin if you like and you can specify position (:before or :after) and
 // additional styles, eg:
 //
@@ -570,14 +543,6 @@ $icons: (
             font-weight: normal;
             line-height: 1;
             @include font-smoothing;
-
-        //    @if $position == after {
-        //        margin-left: .5em;
-        //    }
-
-        //    @if $position == before {
-        //        margin-right: .5em;
-        //    }
         }
 
         // Include any extra rules supplied for the pseudo-element

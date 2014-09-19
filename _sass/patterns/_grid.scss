@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-    INLINE GRID
+    INLINE GRID - because floats are so 2010
    ========================================================================== */
 
 .grid {
@@ -80,7 +80,6 @@
     .#{$namespace}ten-twelfths      { @extend .#{$namespace}five-sixths; }
     .#{$namespace}eleven-twelfths   { width:91.666%; }
 }
-
 
 @include grid-setup();
 

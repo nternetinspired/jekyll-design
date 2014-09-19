@@ -97,7 +97,11 @@ $color-swatch: (
 
         h1 {
             color: #fff;
-            margin: 0;
+            margin-bottom: spacer(1, $scale-up3);
+
+            @include mq(lg) {
+                margin-bottom: spacer(1, $scale-up4);
+            }
         }
 
         img {
@@ -111,7 +115,7 @@ $color-swatch: (
 
         .caption {
             background: transparentize(#c8403d, .2);
-            padding: spacer(2) spacer(4) spacer(2) spacer(6);
+            padding: spacer(4);
             position: absolute;
             max-width: 28em;
 

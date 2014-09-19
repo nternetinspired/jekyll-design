@@ -38,7 +38,7 @@ Whatever floats your boat.
 
 Items of note:
 
-* Fully awesomised Jekyll.
+* Fully awesomised™ Jekyll build. Sweet.
 * Github pages friendly. Clone > tweak > push > view.
 * A re-usable modular code-base.
 * YAML content; set once, use everywhere.
@@ -47,6 +47,7 @@ Items of note:
 * A typography test page.
 * oneweb sass.
 * Minified html output (optional).
+* Responsive *everything*. Naturally.
 
 You can find the source code for it at: <a href="//github.com/nternetinspired/jekyll-design">Github</a>.
 To run locally you just need to fire up terminal and enter:

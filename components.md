@@ -3,10 +3,10 @@ layout: page
 title: Components
 ---
 
-<p class="intro">The following is a collection of these various elements, from
-    the most basic building blocks fundamental to a good design to element collages
-    that combine these elements together into a single design deliverable.
-</p>
+The following is a collection of these various elements, from
+the most basic building blocks fundamental to a good design to element collages
+that combine these elements together into a single design deliverable.
+{: class="intro" }
 
 {% for post in site.posts %}
 <div class="post-intro">

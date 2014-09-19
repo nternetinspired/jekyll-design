@@ -65,7 +65,7 @@ blockquote {
 cite {
     color: $root-color;
     display: block;
-    margin-top: spacer(2, $scale-down2);
+//    margin-top: spacer(2, $scale-down2);
     @include set-type(4, $scale-down2);
 
     &:before {

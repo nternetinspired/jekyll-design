@@ -26,7 +26,7 @@ client:
   sample-cta: This is <em>your</em> call to action
   sample-cta-button: Get started!
   sample-image-1: /img/creditcard.jpg
-  sample-image-1-caption: <h1>html in YAML front-matter?</h1><p class="intro">Hell yes. This is all simply placed in config.yaml, you can change it there, or not. Whatever.</p>
+  sample-image-1-caption: <h1>html in YAML front-matter?</h1><p class="intro">Hell yes. This is all written in config.yaml, you can change it there, or not…</p><p>Are you OK there water guy? Wave if you need help.</p>
   sample-image-2: /img/lantern.jpg
   sample-image-2-caption: This is a caption for a lovely paper lantern. Mmm.
   sample-image-3: /img/timex.jpg

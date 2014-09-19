@@ -17,9 +17,10 @@ client:
   sample-adjective-4: Chillwave
   sample-adjective-5: tofu
   sample-adjective-6: Intelligentsia
-  sample-buttontext-1: Primary button
-  sample-buttontext-2: Default button
-  sample-buttontext-3: Default button
+  sample-buttontext-1: Default btn
+  sample-buttontext-2: Primary btn
+  sample-buttontext-3: Success btn
+  sample-buttontext-4: Danger btn
   sample-blockquote: A quote, or testimonial is a great way to exemplify your business success and make the most of available material.
   sample-cite: Me - I just said that.
   sample-cta: This is <em>your</em> call to action

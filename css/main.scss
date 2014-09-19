@@ -15,7 +15,6 @@
 /* Import our project variables */
 @import "variables"; // Want to change something? Check here first.
 
-
 /* GENERIC */
 /* ========================================================================== */
 // Imports files which generate no output but are used by other modules.
@@ -25,7 +24,7 @@
 @import "generic/normalise"; // Normalise browser behaviours.
 //@import "generic/fluid-type"; // Responsive type scaling, globally.
 //@import "generic/syntax"; // Code highlighting.
-@import "generic/color-swatches"; // DEVELOPMENT ONLY! Comment this out for production.
+// @import "generic/color-swatches"; // DEVELOPMENT ONLY! Comment this out for production.
 
 
 
@@ -49,7 +48,6 @@
 @import "elements/rules";
 //@import "elements/tables";
 @import "elements/typography";
-
 
 
 /* VENDOR */
@@ -79,9 +77,8 @@
 //@import "patterns/overlays";
 //@import "patterns/pagination";
 //@import "patterns/responsive-tables";
-@import "patterns/wells";
+//@import "patterns/wells";
 @import "patterns/wrapper";
-
 @import "patterns/style-tiles"; // DEVELOPMENT ONLY! Comment this out for production.
 
 
@@ -103,4 +100,4 @@
 /* ========================================================================== */
 // CSS specific to individual pages.
 @import "views/element-collage-1"; // DEVELOPMENT ONLY! Comment this out for production.
-@import "views/style-tile-1";
+@import "views/style-tile-1"; // DEVELOPMENT ONLY! Comment this out for production.
